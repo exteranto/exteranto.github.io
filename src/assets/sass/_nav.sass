@@ -1,0 +1,49 @@
+
+nav.navigation
+  align-items: center
+  background: white
+  border-bottom: 1px solid $border-color
+  display: flex
+  height: 60px
+  padding: 0 4rem
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
+
+  a,
+    color: $text
+    padding: 0 1rem
+    transition: .2s ease color
+
+    &:hover
+      color: $primary
+
+  .navigation-dropdown
+    align-items: center
+    display: flex
+    height: 100%
+    position: relative
+
+    &:hover > ul, ul:hover
+      display: block
+
+    ul
+      background: white
+      border: 1px solid $border-color
+      border-top: none
+      box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.55)
+      display: none
+      position: absolute
+      top: 59px
+
+      li
+        padding: .5rem 0
+
+  .navigation-separator
+    border-right: 1px solid $border-color
+    height: 100%
+
+  .navigation-spacer
+    flex: 1
+

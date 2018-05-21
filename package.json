@@ -1,0 +1,40 @@
+{
+  "name": "exteranto-documentation",
+  "version": "1.0.0",
+  "description": "The documentation site for the Exteranto browser extension framework.",
+  "main": "src/main.js",
+  "scripts": {
+    "watch": "node build/dev.js",
+    "build": "node build/prod.js"
+  },
+  "author": "Pavel Koch <kouks.koch@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.4",
+    "bulma": "^0.7.1",
+    "css-loader": "^0.28.10",
+    "dotenv": "^4.0.0",
+    "env": "0.0.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "highlight.js": "^9.12.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "vue": "^2.5.14",
+    "vue-loader": "^13.7.1",
+    "vue-router": "^2.8.1",
+    "vue-style-loader": "^3.1.2",
+    "vue-template-compiler": "^2.5.14",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2",
+    "webpack-merge": "^4.1.2"
+  }
+}
