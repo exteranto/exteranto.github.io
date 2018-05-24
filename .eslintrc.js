@@ -6,6 +6,7 @@ module.exports = {
     'html'
   ],
   'rules': {
-    'arrow-parens': 0
+    'arrow-parens': 0,
+    'no-return-assign': 0
   }
 }

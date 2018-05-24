@@ -1,0 +1,9 @@
+import { Before } from '@exteranto/aop'
+
+class LoggingAspect {
+
+  @Before('user.login')
+  public beforeUserLogin (user: any) : void {
+    console.log('User attempting to log in: ' + user.name)
+  }
+}

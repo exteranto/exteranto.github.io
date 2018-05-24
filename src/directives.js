@@ -1,13 +1,12 @@
 
-import Vue from 'vue'
+// import Vue from 'vue'
 
 /**
  * The image lazy-loading directive.
  */
-Vue.directive('lazy-load', (el, { value }) => {
-  const img = document.createElement('img')
-  img.src = value
-  img.onload = () => {
-    el.src = value
-  }
-})
+// Vue.directive('scroll-to', (el, { value }) => {
+//   const offset = document.getElementById(value)
+//     ? document.getElementById(value).offsetTop - 60 : 150
+
+//   window.scrollTo(0, offset)
+// })

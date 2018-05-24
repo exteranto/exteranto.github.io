@@ -1,0 +1,14 @@
+import { Autowired } from '@exteranto/ioc'
+import { VersionResolver } from '@exteranto/compatibility'
+
+class SomeService {
+
+  @Autowired
+  private versionResolver: VersionResolver
+
+  public execute () : void {
+    const result = this.versionResolver.lower('1.0.0', '2.0.0')
+
+    // assert result === true
+  }
+}

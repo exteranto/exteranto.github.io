@@ -1,5 +1,5 @@
 import Index from '@/components/Index'
-import ApiCache from '@/components/api/Cache'
+import Docs from '@/components/Docs'
 import FourOhFour from '@/components/FourOhFour'
 
 export default [
@@ -9,9 +9,9 @@ export default [
     name: 'home'
   },
   {
-    path: '/api/cache',
-    component: ApiCache,
-    name: 'api-cache'
+    path: '/docs/:name*',
+    component: Docs,
+    name: 'docs'
   },
   {
     path: '/*',

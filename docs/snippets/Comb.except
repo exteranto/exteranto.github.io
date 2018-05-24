@@ -1,0 +1,17 @@
+import { Autowired } from '@exteranto/ioc'
+import { Browser } from '@exteranto/support'
+import { Comb } from '@exteranto/compatibility'
+
+class ExceptChromeFunctionality {
+
+  @Autowired
+  private comb: Comb
+
+  public execute () : void {
+    this.comb.except([Browser.CHROME], () => {
+      // Executet on web-extensions browsers and safari.
+    }).thenExcept([Browser.CHROME], () => {
+      // Both functions are again interchangeable.
+    })
+  }
+}

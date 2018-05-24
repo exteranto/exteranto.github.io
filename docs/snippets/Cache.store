@@ -1,0 +1,16 @@
+import axios from 'axios'
+import { Cache } from '@exteranto/cache'
+import { Autowired } from '@exteranto/ioc'
+
+export class UserService {
+
+  @Autowired
+  private cache: Cache
+
+  public all () : Promise<any> {
+    // Cache all users for 5 minutes.
+    return this.cache.store('all-users', () => {
+      return axios.get('/api/users').then(({ data }) => data)
+    }, 300)
+  }
+}

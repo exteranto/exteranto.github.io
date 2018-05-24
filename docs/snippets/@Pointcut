@@ -1,0 +1,9 @@
+import { Pointcut } from '@exteranto/aop'
+
+class Auth {
+
+  @Pointcut('user.login')
+  public login (user: any) : void {
+    user.login()
+  }
+}

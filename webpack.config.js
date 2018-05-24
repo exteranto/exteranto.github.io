@@ -8,7 +8,7 @@ module.exports = {
     filename: 'build.js'
   },
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': basePath('src'),
       'config': basePath('config'),

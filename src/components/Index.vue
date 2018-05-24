@@ -1,5 +1,5 @@
 <template>
-  <main-layout>
+  <div>
     <header class="hero is-medium">
       <div class="hero-body has-text-centered">
         <h1 class="title is-1">
@@ -42,13 +42,11 @@
         <p class="has-text-justified">To contribute to any repository you should create your own fork of the repository in question, make your changes and create a pull request with a thorough description of the changes you made. All new functionality should be thoroughly tested. Each library package has it’s own tslint configured and the code style must be followed. All of these rules are enforced using the Travis CI tool.</p>
       </div>
     </main>
-  </main-layout>
+  </div>
 </template>
 
 <script>
-import MainLayout from '@/components/layouts/Main'
-
 export default {
-  components: { MainLayout }
+  //
 }
 </script>
