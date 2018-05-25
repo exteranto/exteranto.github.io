@@ -1,0 +1,11 @@
+import { Autowired } from '@exteranto/ioc'
+import { Listener } from '@exteranto/events'
+
+class SomeServiceListener implements Listener {
+
+  public handle (payload: any) : void {
+    // Any listener functionality here. Note that listeners should not contain
+    // any business logic. Use the IOC Container to inject your serives in
+    // the listener and invoke their functionality.
+  }
+}

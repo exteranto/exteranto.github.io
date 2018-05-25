@@ -1,0 +1,12 @@
+import { Autowired } from '@exteranto/ioc'
+import { Listen } from '@exteranto/events'
+
+class SomeServiceListener {
+
+  @Listen('service.some.finished')
+  public handle (payload: any) : void {
+    // Note that this functionality was primarily implemented to make Vue
+    // components capable of communicating with the Dispatcher. For usage
+    // outside of Vue components, we strongly advise to use the event router.
+  }
+}

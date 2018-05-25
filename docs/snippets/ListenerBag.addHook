@@ -1,0 +1,16 @@
+import { Autowired } from '@exteranto/ioc'
+import { Dispatcher } from '@exteranto/events'
+
+class SomeService {
+
+  @Autowired
+  private dispatcher: Dispatcher
+
+  public execute () : void {
+    // Note that you are advised against using this method directly. You should
+    // leverage the @Listen router instead.
+    this.dispatcher.touch('my.event').addHook((payload: any) => {
+      // Handle the event.
+    })
+  }
+}

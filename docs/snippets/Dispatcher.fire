@@ -1,0 +1,14 @@
+import { Autowired } from '@exteranto/ioc'
+import { Dispatcher } from '@exteranto/events'
+
+class SomeService {
+
+  @Autowired
+  private dispatcher: Dispatcher
+
+  public execute () : void {
+    // Service logic here...
+
+    this.dispatcher.fire('service.some.finished', { ... })
+  }
+}

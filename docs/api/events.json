@@ -1,0 +1,201 @@
+{
+  "title": "@exteranto/events",
+  "sections": [
+    {
+      "main": true,
+      "id": "class-dispatcher",
+      "title": "Class <code>Dispatcher</code>",
+      "code": "import { Dispatcher } from '@exteranto/events'"
+    },
+    {
+      "parent": "class-dispatcher",
+      "id": "class-cache-method-touch",
+      "name": "touch",
+      "content": {
+        "block": {
+          "title": "method <code>touch</code>",
+          "body": {
+            "description": [
+              "Returns a listener bag for the specified event."
+            ],
+            "parameters": [
+              {
+                "type": "event: string",
+                "description": "The event identifier"
+              }
+            ],
+            "returns": {
+              "type": "ListenerBag",
+              "description": "The corresponding listener bag instance"
+            }
+          }
+        }
+      },
+      "code": "s3:Dispatcher.touch"
+    },
+    {
+      "parent": "class-dispatcher",
+      "id": "class-dispatcher-method-fire",
+      "name": "fire",
+      "content": {
+        "block": {
+          "title": "method <code>fire</code>",
+          "body": {
+            "description": [
+              "Fires the specified event with the provided payload.",
+              "Note that this function will trigger the exception listeners if any of the listeners was to throw an exception"
+            ],
+            "parameters": [
+              {
+                "type": "event: string",
+                "description": "The event to be fired"
+              },
+              {
+                "type": "payload: any",
+                "description": "The payload to be passed with the event",
+                "optional": true
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:Dispatcher.fire"
+    },
+    {
+      "main": true,
+      "id": "class-listener-bag",
+      "title": "Class <code>ListenerBag</code>",
+      "code": "import { ListenerBag } from '@exteranto/events'"
+    },
+    {
+      "parent": "class-listener-bag",
+      "id": "class-listener-bag-method-add-listener",
+      "name": "addListener",
+      "content": {
+        "block": {
+          "title": "method <code>addListener</code>",
+          "body": {
+            "description": [
+              "Adds an event listener to the listener bag instance."
+            ],
+            "parameters": [
+              {
+                "type": "listener: Listener",
+                "description": "The listener to be added"
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:ListenerBag.addListener"
+    },
+    {
+      "parent": "class-listener-bag",
+      "id": "class-listener-bag-method-add-hook",
+      "name": "addHook",
+      "content": {
+        "block": {
+          "title": "method <code>addHook</code>",
+          "body": {
+            "description": [
+              "Adds an event hook to the listener bag instance."
+            ],
+            "parameters": [
+              {
+                "type": "hook: (payload: any) => void",
+                "description": "The hook to be added"
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:ListenerBag.addHook"
+    },
+    {
+      "parent": "class-listener-bag",
+      "id": "class-listener-bag-method-dispatch",
+      "name": "dispatch",
+      "content": {
+        "block": {
+          "title": "method <code>dispatch</code>",
+          "body": {
+            "description": [
+              "Dispatches all listeners in the bag with the payload provided."
+            ],
+            "parameters": [
+              {
+                "type": "payload: any",
+                "description": "The payload passed to all the listeners"
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:ListenerBag.dispatch"
+    },
+    {
+      "main": true,
+      "id": "interface-listener",
+      "title": "Interface <code>Listener</code>",
+      "code": "import { Listener } from '@exteranto/events'"
+    },
+    {
+      "parent": "interface-listener",
+      "id": "interface-listener-method-handle",
+      "name": "handle",
+      "content": {
+        "block": {
+          "title": "method <code>handle</code>",
+          "body": {
+            "description": [
+              "The only method required on a listener class. All classes registered in the event router should implement this interface."
+            ],
+            "parameters": [
+              {
+                "type": "payload: any",
+                "description": "The payload passed to the listener"
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:Listener.handle"
+    },
+    {
+      "main": true,
+      "id": "annotation-listen",
+      "title": "Annotation <code>@Listen</code>",
+      "code": "import { Listen } from '@exteranto/events'"
+    },
+    {
+      "id": "function-listen",
+      "content": {
+        "block": {
+          "title": "function <code>Listen</code>",
+          "body": {
+            "description": [
+              "Annotation assigned to a method. This annotation marks the method as a hook for the specified event."
+            ],
+            "target": ["Method"]
+          }
+        }
+      },
+      "code": "s3:@Listen"
+    }
+  ]
+}

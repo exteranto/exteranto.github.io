@@ -1,0 +1,38 @@
+{
+  "title": "@exteranto/exceptions",
+  "sections": [
+    {
+      "main": true,
+      "id": "class-handler",
+      "title": "Class <code>Handler</code>",
+      "code": "import { Handler } from '@exteranto/exceptions'"
+    },
+    {
+      "parent": "class-handler",
+      "id": "class-handler-method-handle",
+      "name": "handle",
+      "content": {
+        "block": {
+          "title": "method <code>handle</code>",
+          "body": {
+            "description": [
+              "Handle the error. Note that this method also corresponds to the <code>Listener</code> interface and can be used as a listener for exceptions.",
+              "Read more in the 'Basic Concepts > Events & Listeners' section.",
+              "Also note that any child classes should either call the super method or rethrow the exception if not handled."
+            ],
+            "parameters": [
+              {
+                "type": "payload: Error",
+                "description": "The error to be handled."
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      },
+      "code": "s3:Handler.handle"
+    }
+  ]
+}
