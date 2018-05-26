@@ -2,7 +2,7 @@ import md5 from 'md5'
 
 export default {
 
-  timeout: 1,
+  timeout: 600,
 
   async store (key, cacheable) {
     const hashed = this.hashKey(key)

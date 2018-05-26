@@ -33,6 +33,7 @@ export default new Vuex.Store({
 
       return Cache.store(name, () => {
         return Vue.prototype.$http.get(`${config.s3}/${name}.json`)
+          .catch(() => ({ data: { sections: [] } }))
           .then(response => response.data)
       }).then((docs) => {
         commit('updateDocs', { name, docs })
