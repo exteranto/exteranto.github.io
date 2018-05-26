@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid">
-    <div class="columns is-gapless">
-      <div class="column is-2">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-2-widescreen is-12-desktop">
         <side-menu />
       </div>
 
-      <div class="column is-10">
+      <div class="column is-10-widescreen is-12-desktop">
         <json-doc :content="content" />
       </div>
     </div>

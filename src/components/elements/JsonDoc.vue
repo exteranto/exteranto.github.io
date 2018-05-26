@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="columns is-gapless content has-no-margin">
-      <div class="column is-6">
+    <div class="columns is-gapless is-multiline content has-no-margin">
+      <div class="column is-6-widescreen is-12-desktop">
         <header class="section is-medium is-code-description">
           <h1 class="title is-3">{{ content.title }}</h1>
 
@@ -20,13 +20,13 @@
         </header>
       </div>
 
-      <div class="column is-6">
+      <div class="column is-6-widescreen is-12-desktop">
         <section class="section is-code-example"></section>
       </div>
     </div>
 
-    <div class="columns is-gapless content has-no-margin" v-for="section in content.sections">
-      <div class="column is-6">
+    <div class="columns is-gapless is-multiline content has-no-margin" v-for="section in content.sections">
+      <div class="column is-6-widescreen is-12-desktop">
         <section
           :id="section.id"
           :class="{ section: true, 'is-code-description': ! section.main, 'is-code-title': section.main }"
@@ -46,7 +46,7 @@
         </section>
       </div>
 
-      <div class="column is-6">
+      <div class="column is-6-widescreen is-12-desktop">
         <section class="section is-code-example">
           <snippet :key="section.id" v-if="section.code" :code="section.code"></snippet>
         </section>

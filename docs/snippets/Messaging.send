@@ -1,0 +1,20 @@
+import { Autowired } from '@exteranto/ioc'
+import { Script } from '@exteranto/support'
+import { Messaging } from '@exteranto/messaging'
+
+export class MyService {
+
+  @Autowired
+  private messaging: Messaging
+
+  public execute () : void {
+    // Some logic...
+
+    this.messaging.send(
+      Script.CONTENT, 'service.my.executed',
+      { ... }
+    ).then((response) => {
+      // Do something with the response...
+    })
+  }
+}

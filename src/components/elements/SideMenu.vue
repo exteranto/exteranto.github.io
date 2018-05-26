@@ -35,7 +35,7 @@ export default {
         {
           label: 'API Reference',
           slug: 'api',
-          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc']
+          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc', 'messaging', 'storage', 'support', 'tabs']
         },
         {
           label: 'Basic Concepts',
@@ -53,5 +53,7 @@ export default {
 <style lang="sass" scoped>
 .menu-container
   padding: 2rem 1rem
-  position: fixed
+
+  @media screen and (min-width: 1152px)
+    position: fixed
 </style>

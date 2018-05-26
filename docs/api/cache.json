@@ -55,7 +55,7 @@
             ],
             "returns": {
               "type": "Promise<void>",
-              "description": "A promise resolved after the cache was cleared."
+              "description": "A promise resolved after the cache was cleared"
             }
           }
         }
