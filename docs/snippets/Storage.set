@@ -1,0 +1,20 @@
+import { WiredWith } from '@exteranto/ioc'
+import { Storage } from '@exteranto/storage'
+
+export class MyService {
+
+  @WiredWith(['sync'])
+  private storage: Storage
+
+  public execute () : void {
+    this.storage.set('some-key', 'some-value')
+      .then(() => {
+        // Do anything after the value is stored.
+      })
+
+    this.storage.set({ 'some-key': 'some-value' })
+      .then(() => {
+        // Does exactly the same thing.
+      })
+  }
+}

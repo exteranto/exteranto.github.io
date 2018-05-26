@@ -1,0 +1,20 @@
+import { WiredWith } from '@exteranto/ioc'
+import { Storage } from '@exteranto/storage'
+
+export class MyService {
+
+  @WiredWith(['sync'])
+  private storage: Storage
+
+  public execute () : void {
+    this.storage.remove('some-key')
+      .then(() => {
+        // Do anything after the key is removed.
+      })
+
+    this.storage.remove(['some-key', 'another-key'])
+      .then(() => {
+        // Do anything after all keys are removed.
+      })
+  }
+}

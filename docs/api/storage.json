@@ -1,0 +1,210 @@
+{
+  "title": "@exteranto/storage",
+  "sections": [
+    {
+      "main": true,
+      "id": "class-storage",
+      "title": "Class <code>Storage</code>",
+      "code": "import { Storage } from '@exteranto/storage'"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-constructor",
+      "name": "constructor",
+      "content": {
+        "block": {
+          "title": "constructor",
+          "body": {
+            "description": [
+              "Storage constructor."
+            ],
+            "parameters": [
+              {
+                "type": "type: string",
+                "description": "The sotrage type (sync/local)"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-get",
+      "name": "get",
+      "content": {
+        "block": {
+          "title": "method <code>get</code><br> alias <code>collect</code>",
+          "body": {
+            "description": [
+              "Retrieves a value from the storage. Returns either a single value or an object with key-value pairs of requested values.",
+              "Note that the promise is rejected if the key is not present in the storage."
+            ],
+            "parameters": [
+              {
+                "type": "key: string | string[]",
+                "description": "The key/s to be retrieved from the storage"
+              }
+            ],
+            "returns": {
+              "type": "Promise<any>",
+              "description": "A promise resolved with the desired value/s"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.get"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-all",
+      "name": "all",
+      "content": {
+        "block": {
+          "title": "method <code>all</code>",
+          "body": {
+            "description": [
+              "Retrieves all values from the storage."
+            ],
+            "returns": {
+              "type": "Promise<any>",
+              "description": "A promise resolved with the desired values"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.all"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-set",
+      "name": "set",
+      "content": {
+        "block": {
+          "title": "method <code>set</code><br> alias <code>put</code>",
+          "body": {
+            "description": [
+              "Saves a value to the storage. Can be provided a key and a value or an object of key-value pairs."
+            ],
+            "parameters": [
+              {
+                "type": "key: string | object",
+                "description": "They key to be stored or an object of key-value pairs"
+              },
+              {
+                "type": "value: any",
+                "description": "The value to be stored",
+                "optional": true
+              }
+            ],
+            "returns": {
+              "type": "Promise<void>",
+              "description": "A promise resolved after storing the data"
+            },
+            "dispatches": [
+              "<code>app.storage.$type.changed</code> with the changed key-value pair as payload"
+            ]
+          }
+        }
+      },
+      "code": "s3:Storage.set"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-populate",
+      "name": "populate",
+      "content": {
+        "block": {
+          "title": "method <code>populate</code>",
+          "body": {
+            "description": [
+              "Saves a value to the storage if and only if it is not currently set."
+            ],
+            "parameters": [
+              {
+                "type": "key: string",
+                "description": "They key to be stored"
+              },
+              {
+                "type": "value: any",
+                "description": "The value to be stored",
+                "optional": true
+              }
+            ],
+            "returns": {
+              "type": "Promise<void>",
+              "description": "A promise resolved after storing the data"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.populate"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-remove",
+      "name": "remove",
+      "content": {
+        "block": {
+          "title": "method <code>remove</code>",
+          "body": {
+            "description": [
+              "Remove a key or an array of keys from the storage."
+            ],
+            "parameters": [
+              {
+                "type": "key: string | string[]",
+                "description": "They key/s to be removed"
+              }
+            ],
+            "returns": {
+              "type": "Promise<void>",
+              "description": "A promise resolved after removing the data"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.remove"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-clear",
+      "name": "clear",
+      "content": {
+        "block": {
+          "title": "method <code>clear</code>",
+          "body": {
+            "description": [
+              "Remove all data from the storage."
+            ],
+            "returns": {
+              "type": "Promise<void>",
+              "description": "A promise resolved after removing the data"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.clear"
+    },
+    {
+      "parent": "class-storage",
+      "id": "class-storage-method-size",
+      "name": "size",
+      "content": {
+        "block": {
+          "title": "method <code>size</code>",
+          "body": {
+            "description": [
+              "Returns the total size of the stored data in bytes."
+            ],
+            "returns": {
+              "type": "Promise<number>",
+              "description": "A promise with the number of bytes"
+            }
+          }
+        }
+      },
+      "code": "s3:Storage.size"
+    }
+  ]
+}

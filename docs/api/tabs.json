@@ -1,0 +1,17 @@
+{
+  "title": "@exteranto/support",
+  "sections": [
+    {
+      "main": true,
+      "id": "class-tabs",
+      "title": "Class <code>Tabs</code>",
+      "code": "import { Tabs } from '@exteranto/tabs'"
+    },
+    {
+      "main": true,
+      "id": "class-tab",
+      "title": "Class <code>Tab</code>",
+      "code": "import { Tab } from '@exteranto/tabs'"
+    }
+  ]
+}

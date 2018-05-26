@@ -1,0 +1,15 @@
+import { WiredWith } from '@exteranto/ioc'
+import { Storage } from '@exteranto/storage'
+
+export class MyService {
+
+  @WiredWith(['sync'])
+  private storage: Storage
+
+  public execute () : void {
+    this.storage.clear()
+      .then(() => {
+        // Do anything after the storage is cleared.
+      })
+  }
+}

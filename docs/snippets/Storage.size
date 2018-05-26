@@ -1,0 +1,15 @@
+import { WiredWith } from '@exteranto/ioc'
+import { Storage } from '@exteranto/storage'
+
+export class MyService {
+
+  @WiredWith(['sync'])
+  private storage: Storage
+
+  public execute () : void {
+    this.storage.size()
+      .then((size) => {
+        // assert size === actual storage size in bytes
+      })
+  }
+}

@@ -1,0 +1,7 @@
+import { Browser, Utils } from '@exteranto/support'
+
+const browser: Browser = Utils.currentBrowser()
+
+// if current browser is Chrome, assert browser === Browser.CHROME
+// if current browser is Safari, assert browser === Browser.SAFARI
+// else assert browser === Browser.EXTENSIONS

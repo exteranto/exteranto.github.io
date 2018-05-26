@@ -52,7 +52,7 @@
               "type": "void"
             },
             "dispatches": [
-              "<code>app.booted</code> with not payload"
+              "<code>app.booted</code> with no payload"
             ]
           }
         }

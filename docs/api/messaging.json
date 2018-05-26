@@ -9,7 +9,7 @@
     },
     {
       "parent": "class-messaging",
-      "id": "class-cache-method-listen",
+      "id": "class-messaging-method-listen",
       "name": "listen",
       "content": {
         "block": {
