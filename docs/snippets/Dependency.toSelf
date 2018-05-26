@@ -1,0 +1,8 @@
+import { MyService } from './MyService'
+import { Container } from '@exteranto/ioc'
+
+// Minimal configuration for binding an object.
+Container.bind(MyService).toSelf()
+
+// This can be later resolved as follows or using annotations, which is advised.
+const myService: MyService = Container.resolve(MyService)

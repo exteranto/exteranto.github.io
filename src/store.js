@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import config from 'config'
+import Cache from '@/core/Cache'
 
 Vue.use(Vuex)
 
@@ -30,13 +31,14 @@ export default new Vuex.Store({
         return state.docs[name]
       }
 
-      return Vue.prototype.$http
-        .get(`${config.s3}/${name}.json`)
-        .then((response) => {
-          commit('updateDocs', { name, docs: response.data })
+      return Cache.store(name, () => {
+        return Vue.prototype.$http.get(`${config.s3}/${name}.json`)
+          .then(response => response.data)
+      }).then((docs) => {
+        commit('updateDocs', { name, docs })
 
-          return response.data
-        })
+        return docs
+      })
     },
 
     async loadSnippet ({ commit, dispatch, state }, { name }) {
@@ -44,13 +46,14 @@ export default new Vuex.Store({
         return state.snippets[name]
       }
 
-      return Vue.prototype.$http
-        .get(`${config.s3}/snippets/${name.replace('s3:', '')}`)
-        .then((response) => {
-          commit('updateSnippets', { name, snippet: response.data })
+      return Cache.store(name, () => {
+        return Vue.prototype.$http.get(`${config.s3}/snippets/${name.replace('s3:', '')}`)
+          .then(response => response.data)
+      }).then((snippet) => {
+        commit('updateSnippets', { name, snippet })
 
-          return response.data
-        })
+        return snippet
+      })
     }
   }
 })

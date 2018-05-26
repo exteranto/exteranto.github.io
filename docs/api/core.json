@@ -31,10 +31,7 @@
                 "type": "events: any",
                 "description": "The event router"
               }
-            ],
-            "returns": {
-              "type": "void"
-            }
+            ]
           }
         }
       },

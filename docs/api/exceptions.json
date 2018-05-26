@@ -23,7 +23,7 @@
             "parameters": [
               {
                 "type": "payload: Error",
-                "description": "The error to be handled."
+                "description": "The error to be handled"
               }
             ],
             "returns": {

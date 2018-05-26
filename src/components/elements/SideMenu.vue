@@ -35,7 +35,7 @@ export default {
         {
           label: 'API Reference',
           slug: 'api',
-          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions']
+          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc']
         },
         {
           label: 'Basic Concepts',

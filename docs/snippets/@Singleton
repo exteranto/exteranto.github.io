@@ -1,0 +1,6 @@
+import { Singleton } from '@exteranto/ioc'
+
+@Singleton
+class MyService {
+  // This class is now registered as a singleton dependency.
+}

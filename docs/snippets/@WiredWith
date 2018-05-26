@@ -1,0 +1,21 @@
+import { Autowired } from '@exteranto/ioc'
+import { Listener } from '@exteranto/events'
+import { Storage } from '@exteranto/storage'
+
+class MyListener implements Listener {
+
+  @WiredWith(['%app.storage.driver%'])
+  private defaultStorage: Storage
+
+  @WiredWith(['sync'])
+  private syncStorage: Storage
+
+  @WiredWith(['local'])
+  private localStorage: Storage
+
+  public handle (payload: any) : void {
+    // assert defaultStorage.type === Container.resolveParam('app.storage.driver')
+    // assert syncStorage.type === 'sync'
+    // assert localStorage.type === 'local'
+  }
+}

@@ -1,0 +1,11 @@
+import { Param } from '@exteranto/ioc'
+
+class MyService {
+
+  @Param('app.version')
+  private version: string
+
+  public execute () : void {
+    // assert version === Container.resolveParam('app.version')
+  }
+}

@@ -10,10 +10,19 @@
               <a @click="scrollTo(item.id)" v-html="item.title"></a>
             </li>
           </ul>
+
+          <hr>
+
+          <small>
+            Note that all docs are also available in JSON format.
+            <a :href="s3" target="_blank">{{ s3 }}</a>
+          </small>
         </header>
       </div>
 
-      <div class="column is-6"><section class="section is-code-example"></section></div>
+      <div class="column is-6">
+        <section class="section is-code-example"></section>
+      </div>
     </div>
 
     <div class="columns is-gapless content has-no-margin" v-for="section in content.sections">
@@ -47,6 +56,7 @@
 </template>
 
 <script>
+import config from 'config'
 import Block from './Block'
 import Snippet from './Snippet'
 import DocHeader from './DocHeader'
@@ -59,6 +69,10 @@ export default {
   computed: {
     menu () {
       return this.content.sections.filter(s => s.main)
+    },
+
+    s3 () {
+      return `${config.s3}/${this.$route.params.name}.json`
     }
   },
 

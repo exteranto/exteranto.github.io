@@ -1,0 +1,6 @@
+import { Container } from '@exteranto/ioc'
+
+Container.bindParam('my.param', {
+  name: 'Exteranto',
+  description: 'The awesome browser extension framework.'
+})
