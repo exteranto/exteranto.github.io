@@ -1,0 +1,16 @@
+import { Tabs } from '@exteranto/tabs'
+import { Autowired } from '@exteranto/ioc'
+
+class MyService {
+
+  @Autowired
+  private tabs: Tabs
+
+  public execute () : void {
+    this.tabs.withUrl('https://exteranto.github.io/#/docs/api/tabs')
+      .then((tabs) => {
+        // assert tab instanceof Array<TabInterface> === true
+        // assert each tab.url === 'https://exteranto.github.io/#/docs/api/tabs'
+      })
+  }
+}

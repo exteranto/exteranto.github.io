@@ -1,0 +1,16 @@
+import { Tabs } from '@exteranto/tabs'
+import { Autowired } from '@exteranto/ioc'
+
+class MyService {
+
+  @Autowired
+  private tabs: Tabs
+
+  public execute () : void {
+    this.tabs.active()
+      .then(tab => tab.send('service.my.executed', { ... }))
+      .then((response) => {
+        // assert response was received
+      })
+  }
+}

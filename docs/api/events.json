@@ -9,7 +9,7 @@
     },
     {
       "parent": "class-dispatcher",
-      "id": "class-cache-method-touch",
+      "id": "class-dispatcher-method-touch",
       "name": "touch",
       "content": {
         "block": {

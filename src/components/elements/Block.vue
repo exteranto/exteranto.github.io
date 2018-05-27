@@ -52,6 +52,14 @@
           <li v-for="event in content.body.dispatches" v-html="event"></li>
         </ul>
       </div>
+
+      <div v-if="content.body.values">
+        <hr>
+        <strong>Values</strong>
+        <ul>
+          <li v-for="value in content.body.values"><code>{{ value }}</code></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

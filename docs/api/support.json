@@ -118,16 +118,99 @@
       "code": "import { Provider } from '@exteranto/support'"
     },
     {
+      "parent": "class-provider",
+      "id": "class-provider-method-only",
+      "name": "only",
+      "content": {
+        "block": {
+          "title": "method <code>only</code>",
+          "body": {
+            "description": [
+              "Specify the scripts to register the provider for."
+            ],
+            "returns": {
+              "type": "Script[]",
+              "description": "The scripts array"
+            }
+          }
+        }
+      }
+    },
+    {
+      "parent": "class-provider",
+      "id": "class-provider-method-register",
+      "name": "register",
+      "content": {
+        "block": {
+          "title": "method <code>register</code>",
+          "body": {
+            "description": [
+              "Register the provider dependencies in the container.",
+              "Read more about service providers in the 'Basic Concepts > Service Providers' section."
+            ],
+            "parameters": [
+              {
+                "type": "container: any",
+                "description": "The container class"
+              }
+            ],
+            "returns": {
+              "type": "void"
+            }
+          }
+        }
+      }
+    },
+    {
       "main": true,
       "id": "enum-browser",
       "title": "Enum <code>Browser</code>",
       "code": "import { Browser } from '@exteranto/support'"
     },
     {
+      "id": "enum-browser-values",
+      "name": "values",
+      "content": {
+        "block": {
+          "title": "values",
+          "body": {
+            "description": [
+              "The browser enumeration. This framework unifies APIs of these major browser groups.",
+              "Note that <code>EXTENSIONS</code> cover Firefox, Edge and Opera."
+            ],
+            "values": [
+              "CHROME",
+              "EXTENSIONS",
+              "SAFARI"
+            ]
+          }
+        }
+      }
+    },
+    {
       "main": true,
       "id": "enum-script",
       "title": "Enum <code>Script</code>",
       "code": "import { Script } from '@exteranto/support'"
+    },
+    {
+      "id": "enum-script-values",
+      "name": "values",
+      "content": {
+        "block": {
+          "title": "values",
+          "body": {
+            "description": [
+              "The script enumeration. Extensions are usually divided in these script types. This enumeration is mainly used in service providers and cross-script messaging."
+            ],
+            "values": [
+              "BACKGROUND",
+              "CONTENT",
+              "POPUP"
+            ]
+          }
+        }
+      }
     }
   ]
 }
