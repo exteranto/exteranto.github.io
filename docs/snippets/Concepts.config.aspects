@@ -1,0 +1,13 @@
+// config/index.ts
+
+import { MyAspect } from '@/aspects/MyAspect'
+
+export default {
+  aspects: [
+    // ...
+
+    MyAspect,
+  ]
+
+  // ...
+}

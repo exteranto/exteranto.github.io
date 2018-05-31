@@ -1,0 +1,19 @@
+// config/index.ts
+
+export default {
+  bound: {
+    app: {
+      name: 'Exteranto'
+    }
+  }
+}
+
+// MyService.ts
+
+import { Param } from '@exteranto/ioc'
+
+export class MyService {
+
+  @Param('app.name')
+  private name: string
+}

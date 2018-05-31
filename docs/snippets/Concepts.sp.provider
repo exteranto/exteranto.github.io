@@ -1,0 +1,16 @@
+// src/providers/MyProvider.ts
+
+import { Browser, Provider, Script } from '@exteranto/support'
+
+export class MyProvider extends Provider {
+
+  public only () : Script[] {
+    return [Script.BACKGROUND, Script.POPUP]
+  }
+
+  public register (container: any) : void {
+    container.bind(MyChromeService).to(AbstractService).for(Browser.CHROME)
+    container.bind(MyExtensionsService).to(AbstractService).for(Browser.EXTENSIONS)
+    container.bind(MySafariService).to(AbstractService).for(Browser.SAFARI)
+  }
+}

@@ -6,7 +6,7 @@
       <div class="navigation-spacer"></div>
 
       <div class="navigation-dropdown">
-        <router-link to="/">API Reference</router-link>
+        <router-link to="/docs/api/aop">API Reference</router-link>
 
         <ul>
           <li><router-link to="/docs/api/aop">@exteranto/<strong>aop</strong></router-link></li>
@@ -25,15 +25,14 @@
 
       <div class="navigation-separator"></div>
       <div class="navigation-dropdown">
-        <router-link to="/">Basic Concepts</router-link>
+        <router-link to="/concepts/configuration">Basic Concepts</router-link>
 
         <ul>
-          <li><router-link to="/">Configuration</router-link></li>
-          <li><router-link to="/">Events &amp; Listeners</router-link></li>
-          <li><router-link to="/">IOC Container</router-link></li>
-          <li><router-link to="/">Service Providers</router-link></li>
-          <li><router-link to="/">Aspects</router-link></li>
-          <li><router-link to="/">Packing &amp; Manifests</router-link></li>
+          <li><router-link to="/concepts/configuration">Configuration</router-link></li>
+          <li><router-link to="/concepts/events-listeners">Events &amp; Listeners</router-link></li>
+          <li><router-link to="/concepts/service-providers">Service Providers</router-link></li>
+          <li><router-link to="/concepts/aspects">Aspects</router-link></li>
+          <li><router-link to="/concepts/packing-manifests">Packing &amp; Manifests</router-link></li>
         </ul>
       </div>
     </nav>

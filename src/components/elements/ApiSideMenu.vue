@@ -16,14 +16,11 @@
           <side-sub-menu v-if="`${menu.slug}/${item}` === $route.params.name" :resource="`${menu.slug}/${item}`" />
         </li>
       </ul>
-
-      <hr>
     </aside>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import SideSubMenu from './SideSubMenu'
 
 export default {
@@ -36,17 +33,10 @@ export default {
           label: 'API Reference',
           slug: 'api',
           items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc', 'messaging', 'storage', 'support', 'tabs']
-        },
-        {
-          label: 'Basic Concepts',
-          slug: 'concepts',
-          items: []
         }
       ]
     }
-  },
-
-  computed: mapGetters(['docs'])
+  }
 }
 </script>
 

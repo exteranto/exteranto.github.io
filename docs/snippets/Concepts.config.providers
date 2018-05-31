@@ -1,0 +1,13 @@
+// config/index.ts
+
+import { MyProvider } from '@/providers/MyProvider'
+
+export default {
+  providers: [
+    // ...
+
+    MyProvider,
+  ]
+
+  // ...
+}

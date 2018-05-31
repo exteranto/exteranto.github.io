@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="columns is-gapless is-multiline">
       <div class="column is-2-widescreen is-12-desktop">
-        <side-menu />
+        <api-side-menu />
       </div>
 
       <div class="column is-10-widescreen is-12-desktop">
@@ -14,10 +14,10 @@
 
 <script>
 import JsonDoc from '@/components/elements/JsonDoc'
-import SideMenu from '@/components/elements/SideMenu'
+import ApiSideMenu from '@/components/elements/ApiSideMenu'
 
 export default {
-  components: { JsonDoc, SideMenu },
+  components: { JsonDoc, ApiSideMenu },
 
   data () {
     return {

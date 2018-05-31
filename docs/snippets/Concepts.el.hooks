@@ -1,0 +1,12 @@
+
+// MyService.ts
+
+import { Listen } from '@exteranto/events'
+
+export class MyService {
+
+  @Listen('app.my.event')
+  public handle (payload: any) : void {
+    // Handle the event.
+  }
+}
