@@ -2,9 +2,9 @@ import { Pipeline } from '@exteranto/support'
 
 new Pipeline().send('test')
   .through([
-    (passable, next) => next(passable + '1'),
-    (passable, next) => next(passable + '2'),
-    (passable, next) => next(passable + '3')
+    passable => passable + '1',
+    async (passable) => passable + '2',
+    passable => passable + '3'
   ])
   .then((result) => {
     // assert result === 'test123'
