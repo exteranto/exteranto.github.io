@@ -350,7 +350,7 @@
       "main": true,
       "id": "annotation-autowired",
       "title": "Annotation <code>Autowired</code>",
-      "code": "import { Autowired } from '@exteranto/compatibility'"
+      "code": "import { Autowired } from '@exteranto/ioc'"
     },
     {
       "id": "function-autowired",
@@ -371,7 +371,7 @@
       "main": true,
       "id": "annotation-binding",
       "title": "Annotation <code>Binding</code>",
-      "code": "import { Binding } from '@exteranto/compatibility'"
+      "code": "import { Binding } from '@exteranto/ioc'"
     },
     {
       "id": "function-binding",
@@ -393,7 +393,7 @@
       "main": true,
       "id": "annotation-param",
       "title": "Annotation <code>Param</code>",
-      "code": "import { Param } from '@exteranto/compatibility'"
+      "code": "import { Param } from '@exteranto/ioc'"
     },
     {
       "id": "function-param",
@@ -420,7 +420,7 @@
       "main": true,
       "id": "annotation-singleton",
       "title": "Annotation <code>Singleton</code>",
-      "code": "import { Singleton } from '@exteranto/compatibility'"
+      "code": "import { Singleton } from '@exteranto/ioc'"
     },
     {
       "id": "function-singleton",
@@ -442,7 +442,7 @@
       "main": true,
       "id": "annotation-wired-with",
       "title": "Annotation <code>WiredWith</code>",
-      "code": "import { WiredWith } from '@exteranto/compatibility'"
+      "code": "import { WiredWith } from '@exteranto/ioc'"
     },
     {
       "id": "function-wired-with",
