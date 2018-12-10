@@ -6,7 +6,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 config.entry.unshift('webpack-dev-server/client/index.js?http://localhost:8080', 'webpack/hot/dev-server')
 
-const compiler = webpack(merge(config, {
+const compiler = webpack(merge({...config, mode: 'development'}, {
   plugins: [
     new FriendlyErrorsWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
