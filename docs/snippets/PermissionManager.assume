@@ -1,0 +1,17 @@
+import { AutoWired } from '@exteranto/ioc'
+import { PermissionNotGrantedException } from '@exteranto/exceptions'
+import { PermissionManager, Permission } from '@exteranto/PermissionManager'
+
+export class MyService {
+
+  @AutoWired
+  private guard: PermissionManager
+
+  async public execute () : void {
+    try {
+      await this.guard.assume(Permission.BOOKMARKS)
+    } catch(e) {
+      // assert(e instanceOf PermissionNotGrantedException).isOk()
+    }
+  }
+}

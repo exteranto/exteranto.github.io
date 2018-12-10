@@ -20,6 +20,7 @@
           <li><router-link to="/docs/api/storage">@exteranto/<strong>storage</strong></router-link></li>
           <li><router-link to="/docs/api/support">@exteranto/<strong>support</strong></router-link></li>
           <li><router-link to="/docs/api/tabs">@exteranto/<strong>tabs</strong></router-link></li>
+          <li><router-link to="/docs/api/permissions">@exteranto/<strong>permissions</strong></router-link></li>
         </ul>
       </div>
 

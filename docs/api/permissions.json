@@ -1,0 +1,194 @@
+{
+  "title": "@exteranto/management",
+  "sections": [
+    {
+      "main": true,
+      "id": "class-permission-manager",
+      "title": "Class <code>PermissionManager</code>",
+      "code": "import { PermissionManager } from '@exteranto/management'"
+    },
+    {
+      "parent": "class-permission-manager",
+      "id": "class-permission-manager-method-contains",
+      "name": "contains",
+      "content": {
+        "block": {
+          "title": "method <code>contains</code>",
+          "body": {
+            "description": [
+              "Checks for requested permission."
+            ],
+            "parameters": [
+              {
+                "type": "permission: Permission|Permission[]",
+                "description": "Permission enum values."
+              }
+            ],
+            "returns": {
+              "type": "Promise<Boolean>"
+            }
+          }
+        }
+      },
+      "code": "s3:PermissionManager.contains"
+    },
+    {
+      "parent": "class-permission-manager",
+      "id": "class-permission-manager-method-assume",
+      "name": "assume",
+      "content": {
+        "block": {
+          "title": "method <code>assume</code>",
+          "body": {
+            "description": [
+              "Checks for requested permission. If the requirement is not met, the method is rejected with <code>PermissionNotGrantedException</code>."
+            ],
+            "parameters": [
+              {
+                "type": "permission: Permission|Permission[]",
+                "description": "Permission enum values."
+              }
+            ],
+            "returns": {
+              "type": "Promise<void>"
+            }
+          }
+        }
+      },
+      "code": "s3:PermissionManager.assume"
+    },
+    {
+      "main": true,
+      "id": "annotation-has-access-to",
+      "title": "Annotation <code>@HasAccessTo</code>",
+      "code": "import { HasAccessTo } from '@exteranto/management'"
+    },
+    {
+      "id": "function-has-access-to",
+      "content": {
+        "block": {
+          "title": "function <code>HasAccessTo</code>",
+          "body": {
+            "description": [
+              "Annotation assigned to a method. This annotation checks if extension has API permissions to execute this method. Note that the annotated method now ALWAYS returns a <code>Promise&lt;any&gt;</code>.",
+              "If the criteria have been met, the method continues in its execution as expected.",
+              "If the extension doesn't have required permissions, the method is rejected with <code>PermissionNotGrantedException</code> instead."
+            ],
+            "target": ["Method"],
+            "parameters": [
+              {
+                "type": "permission: Permission|Permission[]",
+                "description": "Permission enum values."
+              }
+            ],
+            "returns": {
+              "type": "Promise<any>",
+              "description": "Resolves with expected method result or rejects with exception."
+            }
+          }
+        }
+      },
+      "code": "s3:@HasAccessTo"
+    },
+    {
+      "main": true,
+      "id": "enum-permission",
+      "title": "Enum <code>Permission</code>",
+      "code": "import { Permission } from '@exteranto/management'"
+    },
+    {
+      "parent": "enum-permission",
+      "id": "enum-permission-values",
+      "name": "values",
+      "content": {
+        "block": {
+          "title": "values",
+          "body": {
+            "description": [
+              "Enum of all available extension permissions.",
+              "Chrome and WebExtensions API share most of the permissions.",
+              "For permission documentation see these links:",
+              "<a target=\"_blank\" href=\"https://developer.chrome.com/extensions/declare_permissions\">https://developer.chrome.com/extensions/declare_permissions</a>",
+              "<a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions\">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions</a>",
+              "Note that on Safari permission system is non-existent. This module assumes that Safari has all permissions."
+            ],
+            "values": [
+              "ACTIVE_TAB",
+              "ALARMS",
+              "BACKGROUND",
+              "BOOKMARKS",
+              "BROWSER_SETTINGS",
+              "BROWSING_DATA",
+              "CERTIFICATE_PROVIDER",
+              "CLIPBOARD_READ",
+              "CLIPBOARD_WRITE",
+              "CONTENT_SETTINGS",
+              "CONTEXT_MENUS",
+              "CONTEXTUAL_IDENTITIES",
+              "COOKIES",
+              "DEBUGGER",
+              "DECLARATIVE_CONTENT",
+              "DECLARATIVE_NETREQUEST",
+              "DECLARATIVE_WEBREQUEST",
+              "DESKTOP_CAPTURE",
+              "DISPLAY_SOURCE",
+              "DNS",
+              "DOCUMENT_SCAN",
+              "DOWNLOADS",
+              "DOWNLOADS_OPEN",
+              "ENTERPRISE_DEVICE_ATTRIBUTES",
+              "ENTERPRISE_HARDWARE_PLATFORM",
+              "ENTERPRISE_PLATFORM_KEYS",
+              "EXPERIMENTAL",
+              "FILE_BROWSER_HANDLER",
+              "FILE_SYSTEM_PROVIDER",
+              "FIND",
+              "FONT_SETTINGS",
+              "GCM",
+              "GEOLOCATION",
+              "HISTORY",
+              "IDENTITY",
+              "IDL_TEST",
+              "IDLE",
+              "MANAGEMENT",
+              "MENUS",
+              "NATIVE_MESSAGING",
+              "NETWORKING_CONFIG",
+              "NOTIFICATIONS",
+              "PAGE_CAPTURE",
+              "PKCS11",
+              "PLATFORM_KEYS",
+              "POWER",
+              "PRINTER_PROVIDER",
+              "PRIVACY",
+              "PROCESSES",
+              "PROXY",
+              "SEARCH",
+              "SESSIONS",
+              "SIGNED_IN_DEVICES",
+              "STORAGE",
+              "SYSTEM_CPU",
+              "SYSTEM_DISPLAY",
+              "SYSTEM_MEMORY",
+              "SYSTEM_STORAGE",
+              "TABCAPTURE",
+              "TABHIDE",
+              "TABS",
+              "THEME",
+              "TOP_SITES",
+              "TOPSITES",
+              "TTS",
+              "TTS_ENGINE",
+              "UNLIMITED_STORAGE",
+              "VPN_PROVIDER",
+              "WALLPAPER",
+              "WEB_NAVIGATION",
+              "WEB_REQUEST",
+              "WEB"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

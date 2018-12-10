@@ -4,7 +4,7 @@
       <p class="menu-label">{{ menu.label }}</p>
 
       <ul class="menu-list">
-        <li v-for="item in menu.items">
+        <li v-for="(item, key) in menu.items" :key="key">
           <router-link
             :class="{ 'is-active': `${menu.slug}/${item}` === $route.params.name }"
             :key="item"
@@ -32,7 +32,7 @@ export default {
         {
           label: 'API Reference',
           slug: 'api',
-          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc', 'messaging', 'storage', 'support', 'tabs']
+          items: ['aop', 'cache', 'compatibility', 'core', 'events', 'exceptions', 'ioc', 'messaging', 'storage', 'support', 'tabs', 'permissions']
         }
       ]
     }
