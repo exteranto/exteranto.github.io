@@ -4,7 +4,7 @@ const config = require('../webpack.config')
 const Uglify = require('uglifyjs-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
-webpack(merge(config, {
+webpack(merge({...config, mode: 'production'}, {
   plugins: [
     new FriendlyErrorsWebpackPlugin(),
     new Uglify(),

@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const basePath = require('./build/helpers').basePath
 
 module.exports = {
@@ -15,17 +16,22 @@ module.exports = {
       'vue$': 'vue/dist/vue.runtime.esm.js'
     }
   },
+  plugins: [
+    new webpack.LoaderOptionsPlugin({ options: {} })
+  ],
   module: {
     rules: [
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
+        type: 'javascript/auto',
         enforce: 'pre',
         include: [basePath('src')],
       },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
+        type: 'javascript/auto',
         include: [basePath('src')],
         options: {
           loaders: {
@@ -37,6 +43,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        type: 'javascript/auto',
         include: [basePath('src')]
       }
     ]
