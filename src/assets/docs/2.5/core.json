@@ -1,0 +1,5138 @@
+{
+	"id": 0,
+	"name": "@exteranto/core",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 240,
+			"name": "\"app/App\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/app/App.ts",
+			"children": [
+				{
+					"id": 241,
+					"name": "App",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 242,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 243,
+									"name": "new App",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 244,
+											"name": "script",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The script the application is being booted in"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Script",
+												"id": 12
+											}
+										},
+										{
+											"id": 245,
+											"name": "config",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The configuration object"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										},
+										{
+											"id": 246,
+											"name": "registerEvents",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "Callback containing all user defined events from the event router\n"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 247,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 248,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"id": 249,
+																	"name": "touch",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 250,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"signatures": [
+																				{
+																					"id": 251,
+																					"name": "__call",
+																					"kind": 4096,
+																					"kindString": "Call signature",
+																					"flags": {},
+																					"parameters": [
+																						{
+																							"id": 252,
+																							"name": "e",
+																							"kind": 32768,
+																							"kindString": "Parameter",
+																							"flags": {},
+																							"type": {
+																								"type": "reference",
+																								"name": "Class",
+																								"id": 16,
+																								"typeArguments": [
+																									{
+																										"type": "reference",
+																										"name": "Event",
+																										"id": 186
+																									}
+																								]
+																							}
+																						}
+																					],
+																					"type": {
+																						"type": "reference",
+																						"name": "ListenerBag",
+																						"id": 198
+																					}
+																				}
+																			],
+																			"sources": [
+																				{
+																					"fileName": "app/App.ts",
+																					"line": 33,
+																					"character": 35
+																				}
+																			]
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "app/App.ts",
+															"line": 33,
+															"character": 27
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "App",
+										"id": 241
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "app/App.ts",
+									"line": 23,
+									"character": 31
+								}
+							]
+						},
+						{
+							"id": 253,
+							"name": "bootstrap",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 254,
+									"name": "bootstrap",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Boots the application by registering base params and bindins and booting\nproviders, registering providers, registering events from the event router\nand firing the application booted event."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "app/App.ts",
+									"line": 43,
+									"character": 18
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								242
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								253
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "app/App.ts",
+							"line": 6,
+							"character": 16
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						241
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "app/App.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 237,
+			"name": "\"app/events\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/app/events.ts",
+			"children": [
+				{
+					"id": 239,
+					"name": "AppBootedEvent",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "This event is fired after the application has been successfully booted. This\nshould be the listener of choice for custom application logic to boot."
+					},
+					"sources": [
+						{
+							"fileName": "app/events.ts",
+							"line": 15,
+							"character": 27
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Event",
+							"id": 186
+						}
+					]
+				},
+				{
+					"id": 238,
+					"name": "WindowLoadedEvent",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "The window loaded event is fired after the native window.load event is\ntriggered. This event has no payload."
+					},
+					"sources": [
+						{
+							"fileName": "app/events.ts",
+							"line": 7,
+							"character": 30
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Event",
+							"id": 186
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						239,
+						238
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "app/events.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 255,
+			"name": "\"app/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/app/index.ts",
+			"sources": [
+				{
+					"fileName": "app/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 217,
+			"name": "\"events/Dispatcher\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/Dispatcher.ts",
+			"children": [
+				{
+					"id": 218,
+					"name": "Dispatcher",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Singleton",
+							"type": {
+								"type": "reference",
+								"name": "Singleton",
+								"id": 168
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 225,
+							"name": "fire",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 226,
+									"name": "fire",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Fires the event. Catches any exceptions and passes them to the exception\nhandling event listeners."
+									},
+									"parameters": [
+										{
+											"id": 227,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event to be fired\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Dispatcher.ts",
+									"line": 50,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 228,
+							"name": "mail",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 229,
+									"name": "mail",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Puts an event into a mailbox for future listeners to read it."
+									},
+									"parameters": [
+										{
+											"id": 230,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event to be mailed\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Dispatcher.ts",
+									"line": 63,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 222,
+							"name": "touch",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 223,
+									"name": "touch",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Return the listener bag assigned to the specified event.",
+										"returns": "The corresponding listener bag\n"
+									},
+									"parameters": [
+										{
+											"id": 224,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event type constructor to modify"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Class",
+												"id": 16,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"name": "Event",
+														"id": 186
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ListenerBag",
+										"id": 198
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Dispatcher.ts",
+									"line": 35,
+									"character": 14
+								}
+							]
+						},
+						{
+							"id": 219,
+							"name": "type",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 220,
+									"name": "type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Return the type associated with the event name.",
+										"returns": "The event type constructor if found or null\n"
+									},
+									"parameters": [
+										{
+											"id": 221,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The name to look for"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Class",
+										"id": 16,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Dispatcher.ts",
+									"line": 25,
+									"character": 13
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								225,
+								228,
+								222,
+								219
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "events/Dispatcher.ts",
+							"line": 7,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						218
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/Dispatcher.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 185,
+			"name": "\"events/Event\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/Event.ts",
+			"children": [
+				{
+					"id": 186,
+					"name": "Event",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "events/Event.ts",
+							"line": 2,
+							"character": 18
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "WindowLoadedEvent",
+							"id": 238
+						},
+						{
+							"type": "reference",
+							"name": "AppBootedEvent",
+							"id": 239
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						186
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/Event.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 187,
+			"name": "\"events/Listener\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/Listener.ts",
+			"children": [
+				{
+					"id": 188,
+					"name": "Listener",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 189,
+							"name": "handle",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 190,
+									"name": "handle",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Handle the fired event."
+									},
+									"parameters": [
+										{
+											"id": 191,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event instance to be handled\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Listener.ts",
+									"line": 10,
+									"character": 8
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								189
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "events/Listener.ts",
+							"line": 3,
+							"character": 25
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						188
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/Listener.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 197,
+			"name": "\"events/ListenerBag\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/ListenerBag.ts",
+			"children": [
+				{
+					"id": 198,
+					"name": "ListenerBag",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 199,
+							"name": "mailbox",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Events that are waiting to be read."
+							},
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 11,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							},
+							"defaultValue": " []"
+						},
+						{
+							"id": 203,
+							"name": "addHook",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 204,
+									"name": "addHook",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Adds a hook to this listener bag instance.",
+										"returns": "This instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 205,
+											"name": "handle",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback hook to be added"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 206,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 207,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"id": 208,
+																	"name": "payload",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "events/ListenerBag.ts",
+															"line": 43,
+															"character": 25
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ListenerBag",
+										"id": 198
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 43,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 200,
+							"name": "addListener",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 201,
+									"name": "addListener",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Adds a listener to this listener bag instance.",
+										"returns": "This instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 202,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The listener to be added"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Listener",
+												"id": 188
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ListenerBag",
+										"id": 198
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 29,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 209,
+							"name": "addMiddleware",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 210,
+									"name": "addMiddleware",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Adds a middlware to this listener bag instance.",
+										"returns": "This instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 211,
+											"name": "middleware",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Middleware",
+												"id": 193
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ListenerBag",
+										"id": 198
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 54,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 212,
+							"name": "dispatch",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 213,
+									"name": "dispatch",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Dispatch all listeners on this instance with provided event payload.\nTrigger all middleware in the process."
+									},
+									"parameters": [
+										{
+											"id": 214,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event to be passed to the listeners\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "void"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 66,
+									"character": 23
+								}
+							]
+						},
+						{
+							"id": 215,
+							"name": "hasListeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 216,
+									"name": "hasListeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Checks if this listener bag instance has at least one listener assigned.",
+										"returns": "Whether this instance has at least one listener\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/ListenerBag.ts",
+									"line": 77,
+									"character": 21
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								199
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								203,
+								200,
+								209,
+								212,
+								215
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "events/ListenerBag.ts",
+							"line": 6,
+							"character": 24
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						198
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/ListenerBag.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 192,
+			"name": "\"events/Middleware\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/Middleware.ts",
+			"children": [
+				{
+					"id": 193,
+					"name": "Middleware",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 194,
+							"name": "handle",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 195,
+									"name": "handle",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Intercept the incoming event."
+									},
+									"parameters": [
+										{
+											"id": 196,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event to be intercepted\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Event",
+												"id": 186
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/Middleware.ts",
+									"line": 10,
+									"character": 8
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								194
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "events/Middleware.ts",
+							"line": 3,
+							"character": 27
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						193
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/Middleware.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 231,
+			"name": "\"events/RegistersNativeEvents\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/RegistersNativeEvents.ts",
+			"children": [
+				{
+					"id": 232,
+					"name": "RegistersNativeEvents",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 233,
+							"name": "registerEvents",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 234,
+									"name": "registerEvents",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Register all native events on the given module."
+									},
+									"parameters": [
+										{
+											"id": 235,
+											"name": "dispatcher",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The event dispatcher implementation\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Dispatcher",
+												"id": 218
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "events/RegistersNativeEvents.ts",
+									"line": 10,
+									"character": 16
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								233
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "events/RegistersNativeEvents.ts",
+							"line": 3,
+							"character": 38
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						232
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "events/RegistersNativeEvents.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 236,
+			"name": "\"events/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/events/index.ts",
+			"sources": [
+				{
+					"fileName": "events/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 74,
+			"name": "\"exceptions\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/exceptions.ts",
+			"children": [
+				{
+					"id": 75,
+					"name": "Exception",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 77,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 76,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 78,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						},
+						{
+							"id": 79,
+							"name": "Error",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isStatic": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 974,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ErrorConstructor"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								77,
+								76,
+								78,
+								79
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "exceptions.ts",
+							"line": 2,
+							"character": 22
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Error"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "IocException",
+							"id": 81
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						75
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "exceptions.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 256,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/index.ts",
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 99,
+			"name": "\"ioc/Container\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/Container.ts",
+			"children": [
+				{
+					"id": 100,
+					"name": "Container",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 105,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 106,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Binds a dependency to the application container.",
+										"returns": "The dependency class instance for further configuration\n"
+									},
+									"typeParameter": [
+										{
+											"id": 107,
+											"name": "C",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 108,
+											"name": "concrete",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The concrete type constructor to be bound"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Class",
+												"id": 16,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "C"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 50,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 109,
+							"name": "bindParam",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 110,
+									"name": "bindParam",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Bind a parameter to the container."
+									},
+									"parameters": [
+										{
+											"id": 111,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The parameter key"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 112,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The parameter value\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 64,
+									"character": 18
+								}
+							]
+						},
+						{
+							"id": 113,
+							"name": "resolve",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 114,
+									"name": "resolve",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Resolves a dependency from the container.",
+										"returns": "The resolved dependency instance",
+										"tags": [
+											{
+												"tag": "throws",
+												"text": "{DependencyNotFoundException} If the dependency does not exist in\nthe container\n"
+											}
+										]
+									},
+									"typeParameter": [
+										{
+											"id": 115,
+											"name": "A",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 116,
+											"name": "abstract",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The abstract type to be resolved"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Abstract",
+												"id": 23,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "A"
+													}
+												]
+											}
+										},
+										{
+											"id": 117,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Arguments that are provided to the constructor"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											},
+											"defaultValue": " []"
+										},
+										{
+											"id": 118,
+											"name": "tags",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The tags to resolve by."
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 119,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"id": 120,
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"id": 121,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "ioc/Container.ts",
+															"line": 81,
+															"character": 9
+														}
+													]
+												}
+											},
+											"defaultValue": " {}"
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "A"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 78,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 126,
+							"name": "resolveOptional",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 127,
+									"name": "resolveOptional",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Resolves a dependency from the container as an optional.",
+										"returns": "The resolved dependency instance, wrapped in an optional\n"
+									},
+									"typeParameter": [
+										{
+											"id": 128,
+											"name": "A",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 129,
+											"name": "abstract",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The abstract type to be resolved"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Abstract",
+												"id": 23,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "A"
+													}
+												]
+											}
+										},
+										{
+											"id": 130,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Arguments that are provided to the constructor"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											},
+											"defaultValue": " []"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Optional",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 128,
+									"character": 24
+								}
+							]
+						},
+						{
+							"id": 122,
+							"name": "resolveParam",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 123,
+									"name": "resolveParam",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Resolves a param from the container.",
+										"returns": "The value of the parameter",
+										"tags": [
+											{
+												"tag": "throws",
+												"text": "{ParameterNotFoundException} If the parameter was not found in the\ncontainer\n"
+											}
+										]
+									},
+									"typeParameter": [
+										{
+											"id": 124,
+											"name": "T",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 125,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The parameter name"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 111,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 101,
+							"name": "getInstance",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 102,
+									"name": "getInstance",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Get the current container instance."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Container",
+										"id": 100
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 31,
+									"character": 27
+								}
+							]
+						},
+						{
+							"id": 103,
+							"name": "reset",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 104,
+									"name": "reset",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "RESET the container."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Container.ts",
+									"line": 40,
+									"character": 21
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								105,
+								109,
+								113,
+								126,
+								122,
+								101,
+								103
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/Container.ts",
+							"line": 11,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						100
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "ioc/Container.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "\"ioc/Dependency\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/Dependency.ts",
+			"children": [
+				{
+					"id": 43,
+					"name": "Dependency",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"typeParameter": [
+						{
+							"id": 44,
+							"name": "A",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						},
+						{
+							"id": 45,
+							"name": "C",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {},
+							"type": {
+								"type": "typeParameter",
+								"name": "A"
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 46,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 47,
+									"name": "new Dependency",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 48,
+											"name": "concrete",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The binding constructor type\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Class",
+												"id": 16,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "C",
+														"constraint": {
+															"type": "typeParameter",
+															"name": "A"
+														}
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 29,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 57,
+							"name": "asSingleton",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 58,
+									"name": "asSingleton",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Specify if the dependency should be a singleton.",
+										"returns": "This class instance for chaining\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C",
+												"constraint": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 77,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 54,
+							"name": "for",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 55,
+									"name": "for",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Specify the browser this dependency should be bound for. If none provided,\nthe dependency is bound for all browsers.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 56,
+											"name": "browser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The browser this dependency should only be bound for"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Browser",
+												"id": 2
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C",
+												"constraint": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 66,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 63,
+							"name": "isSuitableFor",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 64,
+									"name": "isSuitableFor",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Check if the dependency is suitable for the provided abstract on browser.",
+										"returns": "Whether the dependency is suitable to be resolved for the provided abstract type\n"
+									},
+									"parameters": [
+										{
+											"id": 65,
+											"name": "abstract",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The abstract type constructor to check for"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Abstract",
+												"id": 23,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "A"
+													}
+												]
+											}
+										},
+										{
+											"id": 66,
+											"name": "browser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The browser to check for"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Browser",
+												"id": 2
+											}
+										},
+										{
+											"id": 67,
+											"name": "tags",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The required tags"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 68,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"id": 69,
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"id": 70,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "ioc/Dependency.ts",
+															"line": 104,
+															"character": 70
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 104,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 71,
+							"name": "resolve",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 72,
+									"name": "resolve",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Resolve the dependency. Store the instance if the dependency is\na singleton.",
+										"returns": "The dependency instance\n"
+									},
+									"parameters": [
+										{
+											"id": 73,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The constructor arguments"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "C",
+										"constraint": {
+											"type": "typeParameter",
+											"name": "A"
+										}
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 119,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 59,
+							"name": "tag",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 60,
+									"name": "tag",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Assign a tag to the dependency.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 61,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The tag name"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 62,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The tag value"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C",
+												"constraint": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 90,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 49,
+							"name": "to",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 50,
+									"name": "to",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Define the abstract version of the dependency.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 51,
+											"name": "abstract",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The abstract constructor type"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Abstract",
+												"id": 23,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "A"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C",
+												"constraint": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 44,
+									"character": 11
+								}
+							]
+						},
+						{
+							"id": 52,
+							"name": "toSelf",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 53,
+									"name": "toSelf",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Bind the concrete dependency to self.",
+										"returns": "This class instance for chaining\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Dependency",
+										"id": 43,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "A"
+											},
+											{
+												"type": "typeParameter",
+												"name": "C",
+												"constraint": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/Dependency.ts",
+									"line": 55,
+									"character": 15
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								46
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								57,
+								54,
+								63,
+								71,
+								59,
+								49,
+								52
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/Dependency.ts",
+							"line": 4,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						43
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "ioc/Dependency.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 131,
+			"name": "\"ioc/annotations\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/annotations.ts",
+			"children": [
+				{
+					"id": 136,
+					"name": "Autowired",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 137,
+							"name": "Autowired",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Autowired annotation. Automatically resolves a dependency from the\ncontainer when assigned to a class property."
+							},
+							"typeParameter": [
+								{
+									"id": 138,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 139,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 140,
+									"name": "property",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 39,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 164,
+					"name": "Binding",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 165,
+							"name": "Binding",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Binding annotation. Registers a non-singleton dependency in the\ncontainer."
+							},
+							"typeParameter": [
+								{
+									"id": 166,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 167,
+									"name": "Constructor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The type constructor to be bound to the container\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Class",
+										"id": 16,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Class",
+								"id": 16,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "T"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 119,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 132,
+					"name": "Inject",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 133,
+							"name": "Inject",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Inject annotation. Inject a dependency from the container to the\nprovided property."
+							},
+							"typeParameter": [
+								{
+									"id": 134,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 135,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "InjectOptions",
+										"id": 27,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									},
+									"defaultValue": " {}"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PropertyAnnotation",
+								"id": 36,
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 15,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 141,
+					"name": "Optionally",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 142,
+							"name": "Optionally",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Optionally annotation. Resolves a dependency from the container as an\noptional, if not present, returns None."
+							},
+							"typeParameter": [
+								{
+									"id": 143,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 144,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Abstract",
+										"id": 23,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PropertyAnnotation",
+								"id": 36,
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 47,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 160,
+					"name": "Param",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 161,
+							"name": "Param",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Param annotation. Automatically resolves a param from the container if\nassigned to a class property."
+							},
+							"typeParameter": [
+								{
+									"id": 162,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 163,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PropertyAnnotation",
+								"id": 36,
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 95,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 156,
+					"name": "Self",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 157,
+							"name": "Self",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Self annotation. Assigns a container instance to the property."
+							},
+							"parameters": [
+								{
+									"id": 158,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 159,
+									"name": "property",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 75,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 168,
+					"name": "Singleton",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"decorates": [
+						{
+							"type": "reference",
+							"name": "Dispatcher",
+							"id": 218
+						}
+					],
+					"signatures": [
+						{
+							"id": 169,
+							"name": "Singleton",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Singleton annotation. Registers a singleton dependency in the container."
+							},
+							"typeParameter": [
+								{
+									"id": 170,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 171,
+									"name": "Constructor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The type constructor to be bound to the container\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Class",
+										"id": 16,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Class",
+								"id": 16,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "T"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 130,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 149,
+					"name": "Tagged",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 150,
+							"name": "Tagged",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Tagged annotation. Resolves a dependency based on a tag assigned to it."
+							},
+							"typeParameter": [
+								{
+									"id": 151,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 152,
+									"name": "tags",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 153,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"id": 154,
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"id": 155,
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"sources": [
+												{
+													"fileName": "ioc/annotations.ts",
+													"line": 68,
+													"character": 32
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PropertyAnnotation",
+								"id": 36,
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 68,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 145,
+					"name": "With",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 146,
+							"name": "With",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @With annotation. Automatically resolves a dependency from the\ncontainer when assigned to a class property while injecting given properties\nto the constructor."
+							},
+							"typeParameter": [
+								{
+									"id": 147,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 148,
+									"name": "args",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Constructor arguments to be provided\n"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PropertyAnnotation",
+								"id": 36,
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/annotations.ts",
+							"line": 58,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						136,
+						164,
+						132,
+						141,
+						160,
+						156,
+						168,
+						149,
+						145
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "ioc/annotations.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 80,
+			"name": "\"ioc/exceptions\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/exceptions.ts",
+			"children": [
+				{
+					"id": 85,
+					"name": "DependencyNotFoundException",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 86,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 87,
+									"name": "new DependencyNotFoundException",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 88,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The dependency name\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "DependencyNotFoundException",
+										"id": 85
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/exceptions.ts",
+									"line": 7,
+									"character": 63
+								}
+							]
+						},
+						{
+							"id": 90,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 89,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 91,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								86
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								90,
+								89,
+								91
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/exceptions.ts",
+							"line": 7,
+							"character": 40
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "IocException",
+							"id": 81
+						}
+					]
+				},
+				{
+					"id": 81,
+					"name": "IocException",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 83,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 82,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 84,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								83,
+								82,
+								84
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/exceptions.ts",
+							"line": 3,
+							"character": 25
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Exception",
+							"id": 75
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "DependencyNotFoundException",
+							"id": 85
+						},
+						{
+							"type": "reference",
+							"name": "ParameterNotFoundException",
+							"id": 92
+						}
+					]
+				},
+				{
+					"id": 92,
+					"name": "ParameterNotFoundException",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 93,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 94,
+									"name": "new ParameterNotFoundException",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 95,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The parameter name\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ParameterNotFoundException",
+										"id": 92
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/exceptions.ts",
+									"line": 18,
+									"character": 62
+								}
+							]
+						},
+						{
+							"id": 97,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 96,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 98,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								93
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								97,
+								96,
+								98
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/exceptions.ts",
+							"line": 18,
+							"character": 39
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "IocException",
+							"id": 81
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						85,
+						81,
+						92
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "ioc/exceptions.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 172,
+			"name": "\"ioc/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/index.ts",
+			"sources": [
+				{
+					"fileName": "ioc/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "\"ioc/types\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/ioc/types.ts",
+			"children": [
+				{
+					"id": 23,
+					"name": "Abstract",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"typeParameter": [
+						{
+							"id": 24,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"children": [
+						{
+							"id": 26,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The name of the type."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 25,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 25,
+							"name": "prototype",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The abstract type must have a prototype on it."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 20,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "typeParameter",
+								"name": "T"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								26,
+								25
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/types.ts",
+							"line": 15,
+							"character": 25
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "Class",
+							"id": 16
+						}
+					]
+				},
+				{
+					"id": 16,
+					"name": "Class",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Custom constructor types."
+					},
+					"typeParameter": [
+						{
+							"id": 17,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"children": [
+						{
+							"id": 18,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "A constructor type."
+							},
+							"signatures": [
+								{
+									"id": 19,
+									"name": "new Class",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {
+										"shortText": "A constructor type."
+									},
+									"parameters": [
+										{
+											"id": 20,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 6,
+									"character": 47
+								}
+							]
+						},
+						{
+							"id": 22,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The name of the type."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 25,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Abstract.name",
+								"id": 26
+							}
+						},
+						{
+							"id": 21,
+							"name": "prototype",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The abstract type must have a prototype on it."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 20,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "typeParameter",
+								"name": "T"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Abstract.prototype",
+								"id": 25
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								18
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								22,
+								21
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/types.ts",
+							"line": 6,
+							"character": 22
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Abstract",
+							"id": 23,
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "T"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 27,
+					"name": "InjectOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Type interfaces."
+					},
+					"typeParameter": [
+						{
+							"id": 28,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"children": [
+						{
+							"id": 30,
+							"name": "args",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The arguments to be passed to the dependency constructor."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 49,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						},
+						{
+							"id": 35,
+							"name": "optional",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "Whether to inject as an optional."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 59,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 31,
+							"name": "tags",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The tags to resolve by."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 54,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 32,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"indexSignature": [
+										{
+											"id": 33,
+											"name": "__index",
+											"kind": 8192,
+											"kindString": "Index signature",
+											"flags": {},
+											"parameters": [
+												{
+													"id": 34,
+													"name": "key",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "ioc/types.ts",
+											"line": 54,
+											"character": 8
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 29,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The abstract type."
+							},
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 44,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Abstract",
+								"id": 23,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "T"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								30,
+								35,
+								31,
+								29
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/types.ts",
+							"line": 39,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 36,
+					"name": "PropertyAnnotation",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Annotation types."
+					},
+					"typeParameter": [
+						{
+							"id": 37,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "ioc/types.ts",
+							"line": 33,
+							"character": 30
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 38,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 39,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 40,
+											"name": "target",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										},
+										{
+											"id": 41,
+											"name": "property",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "ioc/types.ts",
+									"line": 33,
+									"character": 35
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						23,
+						16,
+						27
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						36
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "ioc/types.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "\"support/Browser\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/support/Browser.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "Browser",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "The browser type enumeration."
+					},
+					"children": [
+						{
+							"id": 3,
+							"name": "CHROME",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Browser.ts",
+									"line": 6,
+									"character": 8
+								}
+							],
+							"defaultValue": "\"chrome\""
+						},
+						{
+							"id": 4,
+							"name": "EXTENSIONS",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Browser.ts",
+									"line": 7,
+									"character": 12
+								}
+							],
+							"defaultValue": "\"extensions\""
+						},
+						{
+							"id": 5,
+							"name": "SAFARI",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Browser.ts",
+									"line": 8,
+									"character": 8
+								}
+							],
+							"defaultValue": "\"safari\""
+						},
+						{
+							"id": 6,
+							"name": "TESTING",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Browser.ts",
+									"line": 9,
+									"character": 9
+								}
+							],
+							"defaultValue": "\"testing\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								3,
+								4,
+								5,
+								6
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "support/Browser.ts",
+							"line": 5,
+							"character": 19
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "support/Browser.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 173,
+			"name": "\"support/Provider\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/support/Provider.ts",
+			"children": [
+				{
+					"id": 174,
+					"name": "Provider",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true,
+						"isAbstract": true
+					},
+					"children": [
+						{
+							"id": 175,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 176,
+									"name": "new Provider",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 177,
+											"name": "container",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "The current container instance\n// TODO: Consider dispatcher.\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Container",
+												"id": 100
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Provider",
+										"id": 174
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "support/Provider.ts",
+									"line": 4,
+									"character": 32
+								}
+							]
+						},
+						{
+							"id": 180,
+							"name": "boot",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isAbstract": true
+							},
+							"signatures": [
+								{
+									"id": 181,
+									"name": "boot",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Boot the provider services."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "support/Provider.ts",
+									"line": 26,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 178,
+							"name": "only",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 179,
+									"name": "only",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "The scripts that this provider should be registered for.",
+										"returns": "The array of accepted scripts\n"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "Script",
+											"id": 12
+										}
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "support/Provider.ts",
+									"line": 19,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 182,
+							"name": "register",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isAbstract": true
+							},
+							"signatures": [
+								{
+									"id": 183,
+									"name": "register",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Register the provider services."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "support/Provider.ts",
+									"line": 31,
+									"character": 26
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								175
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								180,
+								178,
+								182
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "support/Provider.ts",
+							"line": 4,
+							"character": 30
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						174
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "support/Provider.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "\"support/Script\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/support/Script.ts",
+			"children": [
+				{
+					"id": 12,
+					"name": "Script",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "The script type enumeration."
+					},
+					"children": [
+						{
+							"id": 13,
+							"name": "BACKGROUND",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Script.ts",
+									"line": 6,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 14,
+							"name": "CONTENT",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "support/Script.ts",
+									"line": 7,
+									"character": 9
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								13,
+								14
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "support/Script.ts",
+							"line": 5,
+							"character": 18
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						12
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "support/Script.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "\"support/Utils\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/support/Utils.ts",
+			"children": [
+				{
+					"id": 8,
+					"name": "Utils",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 9,
+							"name": "currentBrowser",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 10,
+									"name": "currentBrowser",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Determine what browser are we in at the moment.",
+										"returns": "The current browser\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Browser",
+										"id": 2
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "support/Utils.ts",
+									"line": 10,
+									"character": 30
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								9
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "support/Utils.ts",
+							"line": 3,
+							"character": 18
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "support/Utils.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 184,
+			"name": "\"support/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/core/src/support/index.ts",
+			"sources": [
+				{
+					"fileName": "support/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "External modules",
+			"kind": 1,
+			"children": [
+				240,
+				237,
+				255,
+				217,
+				185,
+				187,
+				197,
+				192,
+				231,
+				236,
+				74,
+				256,
+				99,
+				42,
+				131,
+				80,
+				172,
+				15,
+				1,
+				173,
+				11,
+				7,
+				184
+			]
+		}
+	]
+}

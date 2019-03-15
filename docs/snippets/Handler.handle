@@ -1,8 +1,0 @@
-// events.ts
-import { Handler } from '@exteranto/exceptions'
-
-export default {
-  // ...
-
-  'app.exception': Handler
-}

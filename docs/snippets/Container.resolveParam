@@ -1,9 +1,0 @@
-import { Container } from '@exteranto/ioc'
-
-// Following the Container.bindParam example.
-const myParam: any = Container.resolveParam('my.param')
-// assert myParam === { name: '...', description: '...' }
-
-// You can also leverage the dot notation to break down the object.
-const name: string = Container.resolveParam('my.param.name')
-// assert name === 'Exteranto'

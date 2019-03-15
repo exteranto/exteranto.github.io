@@ -1,9 +1,0 @@
-import { MyService } from './MyService'
-import { Container } from '@exteranto/ioc'
-
-Container.bind(MyService).toSelf().singleton(true)
-
-const myService: MyService = Container.resolve(MyService)
-const anotherMyService: MyService = Container.resolve(MyService)
-
-// assert myService === anotherMyService

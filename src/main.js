@@ -1,24 +1,13 @@
-import './directives'
 import Vue from 'vue'
-import App from './App'
-import axios from 'axios'
+import './plugins/vuetify'
+import App from './App.vue'
+import router from './router'
 import store from './store'
-import routes from './routes'
-import Router from 'vue-router'
-import VueAxios from 'vue-axios'
 
-Vue.use(Router)
-Vue.use(VueAxios, axios)
+Vue.config.productionTip = false
 
-const router = new Router({ routes })
-
-router.beforeEach((to, from, next) => {
-  window.scrollTo(0, 0)
-  next()
-})
-
-export default new Vue({
-  render: h => h(App),
+new Vue({
   router,
-  store
+  store,
+  render: h => h(App)
 }).$mount('#app')

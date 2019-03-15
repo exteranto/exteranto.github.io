@@ -1,6 +1,0 @@
-import { MyService } from './MyService'
-import { Container } from '@exteranto/ioc'
-
-// Bind MyService to the container. Note that you need further configuration on
-// the dependency.
-Container.bind(MyService)

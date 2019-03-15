@@ -1,9 +1,0 @@
-import { MyService } from './MyService'
-import { Container } from '@exteranto/ioc'
-import { AbstractService } from './AbstractService'
-
-// Minimal configuration for binding an object to its abstract.
-Container.bind(MyService).to(AbstractService)
-
-// This can be later resolved as follows or using annotations, which is advised.
-const myService: AbstractService = Container.resolve(AbstractService)

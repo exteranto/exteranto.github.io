@@ -1,6 +1,0 @@
-import { Binding } from '@exteranto/ioc'
-
-@Binding
-class MyService {
-  // This class is now registered as a non-singleton dependency.
-}

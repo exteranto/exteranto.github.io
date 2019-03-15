@@ -1,69 +1,64 @@
 <template>
-  <div>
-    <nav class="navigation">
-      <router-link to="/">Exteranto</router-link>
+  <v-app>
+    <v-toolbar app dark color="primary">
+      <v-toolbar-title class="headline">
+        <v-btn flat :to="{ name: 'home' }">Exteranto</v-btn>
+      </v-toolbar-title>
 
-      <div class="navigation-spacer"></div>
+      <v-spacer></v-spacer>
 
-      <div class="navigation-dropdown">
-        <router-link to="/docs/api/aop">API Reference</router-link>
+      <v-menu
+        bottom
+        transition="slide-y-transition"
+      >
+        <v-btn
+          slot="activator"
+          flat
+        >
+          <span class="mr-2">API Reference</span>
+        </v-btn>
 
-        <ul>
-          <li><router-link to="/docs/api/aop">@exteranto/<strong>aop</strong></router-link></li>
-          <li><router-link to="/docs/api/cache" replace>@exteranto/<strong>cache</strong></router-link></li>
-          <li><router-link to="/docs/api/compatibility">@exteranto/<strong>compatibility</strong></router-link></li>
-          <li><router-link to="/docs/api/core">@exteranto/<strong>core</strong></router-link></li>
-          <li><router-link to="/docs/api/events">@exteranto/<strong>events</strong></router-link></li>
-          <li><router-link to="/docs/api/exceptions">@exteranto/<strong>exceptions</strong></router-link></li>
-          <li><router-link to="/docs/api/ioc">@exteranto/<strong>ioc</strong></router-link></li>
-          <li><router-link to="/docs/api/messaging">@exteranto/<strong>messaging</strong></router-link></li>
-          <li><router-link to="/docs/api/storage">@exteranto/<strong>storage</strong></router-link></li>
-          <li><router-link to="/docs/api/support">@exteranto/<strong>support</strong></router-link></li>
-          <li><router-link to="/docs/api/tabs">@exteranto/<strong>tabs</strong></router-link></li>
-          <li><router-link to="/docs/api/permissions">@exteranto/<strong>permissions</strong></router-link></li>
-        </ul>
-      </div>
+        <v-list>
+          <v-list-tile>
+            <v-btn :to="{ name: 'api', params: { branch: 'master' } }" flat>master</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn :to="{ name: 'api', params: { branch: '3.0' } }" flat>3.0</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn :to="{ name: 'api', params: { branch: '2.5' } }" flat>2.5</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn :to="{ name: 'api', params: { branch: '2.3' } }" flat>2.3</v-btn>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
 
-      <div class="navigation-separator"></div>
-      <div class="navigation-dropdown">
-        <router-link to="/concepts/configuration">Basic Concepts</router-link>
-
-        <ul>
-          <li><router-link to="/concepts/configuration">Configuration</router-link></li>
-          <li><router-link to="/concepts/events-listeners">Events &amp; Listeners</router-link></li>
-          <li><router-link to="/concepts/service-providers">Service Providers</router-link></li>
-          <li><router-link to="/concepts/aspects">Aspects</router-link></li>
-          <li><router-link to="/concepts/packing-manifests">Packing &amp; Manifests</router-link></li>
-        </ul>
-      </div>
-    </nav>
-
-    <transition name="fade">
-      <router-view />
-    </transition>
-
-    <div class="container">
-      <footer class="footer">
-        <p class="has-text-centered">
-          <a target="_blank" href="https://github.com/exteranto/exteranto">Exteranto</a>
-          browser extension framework, mainained by
-          <a target="_blank" href="https://pavelkoch.io">Pavel Koch</a>
-        </p>
-      </footer>
-    </div>
-
-    <scroll-top></scroll-top>
-  </div>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import ScrollTop from '@/components/elements/ScrollTop'
-
 export default {
-  components: { ScrollTop }
+  //
 }
 </script>
 
-<style lang="sass">
-@import assets/sass/app
+<style>
+aside::-webkit-scrollbar {
+  width: 0.5em;
+}
+aside::-webkit-scrollbar-track {
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  background: #fafafa;
+  box-shadow: none;
+  outline: none;
+}
+aside::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}
 </style>

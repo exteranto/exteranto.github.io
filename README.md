@@ -1,14 +1,34 @@
-# Exteranto
+# vue-tests
 
-## About
+## Project setup
+```
+npm install
+```
 
-> Note that this repository is only the documentation site. If you want to
-> download the skeleton application, you might want to visit
-> [this repo](https://github.com/exteranto/exteranto).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Exteranto is a browser extension framework that aims to unify various browser
-APIs. It also provides an object-oriented and strictly-type sctructure to your
-extension.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-For installation manual and other documentation, visit the
-[exteranto.github.io](https://exteranto.github.io) page.
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

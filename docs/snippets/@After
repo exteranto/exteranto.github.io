@@ -1,9 +1,0 @@
-import { After } from '@exteranto/aop'
-
-class LoggingAspect {
-
-  @After('user.login')
-  public afterUserLogin (user: any) : void {
-    console.log('User logged in: ' + user.name)
-  }
-}

@@ -1,0 +1,2447 @@
+{
+	"id": 0,
+	"name": "@exteranto/utils",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "\"aop/AspectContainer\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/aop/AspectContainer.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "AspectContainer",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 13,
+							"name": "after",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 14,
+									"name": "after",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Fire the after aspects for the provided pointcut."
+									},
+									"parameters": [
+										{
+											"id": 15,
+											"name": "pointcut",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The pointcut name"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 16,
+											"name": "payload",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The arguments to be passed to the aspect\n"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "aop/AspectContainer.ts",
+									"line": 50,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 9,
+							"name": "before",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 10,
+									"name": "before",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Fire the before aspects for the provided pointcut."
+									},
+									"parameters": [
+										{
+											"id": 11,
+											"name": "pointcut",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The pointcut name"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 12,
+											"name": "payload",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The arguments to be passed to the aspect\n"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "aop/AspectContainer.ts",
+									"line": 38,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 3,
+							"name": "bind",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 4,
+									"name": "bind",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Bind an aspect to provided method on an aspect class."
+									},
+									"parameters": [
+										{
+											"id": 5,
+											"name": "pointcut",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The pointcut name"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 6,
+											"name": "when",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Either 'before' or 'after'"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 7,
+											"name": "target",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The target scope to assign the aspect too"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										},
+										{
+											"id": 8,
+											"name": "method",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The method name to wrap\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "aop/AspectContainer.ts",
+									"line": 17,
+									"character": 20
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								13,
+								9,
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "aop/AspectContainer.ts",
+							"line": 2,
+							"character": 28
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "aop/AspectContainer.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 17,
+			"name": "\"aop/annotations\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/aop/annotations.ts",
+			"children": [
+				{
+					"id": 18,
+					"name": "After",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 19,
+							"name": "After",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @After annotation for the aspect method."
+							},
+							"parameters": [
+								{
+									"id": 20,
+									"name": "pointcut",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The name of the pointcut to assign the aspect to\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 21,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"signatures": [
+										{
+											"id": 22,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {},
+											"parameters": [
+												{
+													"id": 23,
+													"name": "target",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												},
+												{
+													"id": 24,
+													"name": "method",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "aop/annotations.ts",
+											"line": 8,
+											"character": 42
+										}
+									]
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "aop/annotations.ts",
+							"line": 8,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 25,
+					"name": "Before",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 26,
+							"name": "Before",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Before annotation for the aspect method."
+							},
+							"parameters": [
+								{
+									"id": 27,
+									"name": "pointcut",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The name of the pointcut to assign the aspect to\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 28,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"signatures": [
+										{
+											"id": 29,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {},
+											"parameters": [
+												{
+													"id": 30,
+													"name": "target",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												},
+												{
+													"id": 31,
+													"name": "method",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "aop/annotations.ts",
+											"line": 19,
+											"character": 43
+										}
+									]
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "aop/annotations.ts",
+							"line": 19,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 32,
+					"name": "Pointcut",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 33,
+							"name": "Pointcut",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Pointcut annotation. Creates a pointcut at provided method."
+							},
+							"parameters": [
+								{
+									"id": 34,
+									"name": "pointcut",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The name of the pointcut to assign the aspect to\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 35,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"signatures": [
+										{
+											"id": 36,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {},
+											"parameters": [
+												{
+													"id": 37,
+													"name": "target",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												},
+												{
+													"id": 38,
+													"name": "method",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 39,
+													"name": "descriptor",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "aop/annotations.ts",
+											"line": 30,
+											"character": 45
+										}
+									]
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "aop/annotations.ts",
+							"line": 30,
+							"character": 24
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						18,
+						25,
+						32
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "aop/annotations.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 40,
+			"name": "\"aop/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/aop/index.ts",
+			"sources": [
+				{
+					"fileName": "aop/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 41,
+			"name": "\"cache/Cache\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/cache/Cache.ts",
+			"children": [
+				{
+					"id": 42,
+					"name": "Cache",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Binding",
+							"type": {
+								"type": "reference",
+								"name": "Binding"
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 50,
+							"name": "clear",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 51,
+									"name": "clear",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Clears all keys stored in the cache."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "void"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "cache/Cache.ts",
+									"line": 50,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 43,
+							"name": "store",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 44,
+									"name": "store",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Stores the cacheable object to the specified cache driver.",
+										"returns": "The desired value cached\n"
+									},
+									"parameters": [
+										{
+											"id": 45,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The cache key to be used"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 46,
+											"name": "cacheable",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback whose return value is cached"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 47,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 48,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "cache/Cache.ts",
+															"line": 33,
+															"character": 45
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 49,
+											"name": "timeout",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional cache timeout in seconds, falls back to global cache config"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "cache/Cache.ts",
+									"line": 33,
+									"character": 20
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								50,
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "cache/Cache.ts",
+							"line": 6,
+							"character": 18
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						42
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "cache/Cache.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 52,
+			"name": "\"cache/annotations\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/cache/annotations.ts",
+			"children": [
+				{
+					"id": 53,
+					"name": "Cached",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 54,
+							"name": "Cached",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "The @Cached annotation. Automatically caches a method return value. Note that\nany annotated method is automatically transformed to have a return type of\nPromise<T>."
+							},
+							"parameters": [
+								{
+									"id": 55,
+									"name": "params",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The parameters for the annotation\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 56,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 57,
+													"name": "key",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "cache/annotations.ts",
+															"line": 11,
+															"character": 37
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 58,
+													"name": "timeout",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "cache/annotations.ts",
+															"line": 11,
+															"character": 55
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														57,
+														58
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "cache/annotations.ts",
+													"line": 11,
+													"character": 31
+												}
+											]
+										}
+									},
+									"defaultValue": " {}"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "cache/annotations.ts",
+							"line": 11,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 59,
+					"name": "resolveTimeout",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 60,
+							"name": "resolveTimeout",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Resolves cache timeout from the params object.",
+								"returns": "The timeout in seconds\n"
+							},
+							"parameters": [
+								{
+									"id": 61,
+									"name": "timeout",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Timeout format to be resolved"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "cache/annotations.ts",
+							"line": 34,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						53,
+						59
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "cache/annotations.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 62,
+			"name": "\"cache/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/cache/index.ts",
+			"sources": [
+				{
+					"fileName": "cache/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 63,
+			"name": "\"compatibility/Comb\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/compatibility/Comb.ts",
+			"children": [
+				{
+					"id": 64,
+					"name": "Comb",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Binding",
+							"type": {
+								"type": "reference",
+								"name": "Binding"
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 77,
+							"name": "except",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 78,
+									"name": "except",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Performs an action on all browsers but the specified ones.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 79,
+											"name": "browsers",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The constraining browser array"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Browser"
+												}
+											}
+										},
+										{
+											"id": 80,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked when constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 81,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 82,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Comb.ts",
+															"line": 51,
+															"character": 47
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Comb",
+										"id": 64
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Comb.ts",
+									"line": 51,
+									"character": 15
+								}
+							]
+						},
+						{
+							"id": 65,
+							"name": "only",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 66,
+									"name": "only",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Performs an action only on a specific set of browsers.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 67,
+											"name": "browsers",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The constraining browser array"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Browser"
+												}
+											}
+										},
+										{
+											"id": 68,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked when constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 69,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 70,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Comb.ts",
+															"line": 25,
+															"character": 45
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Comb",
+										"id": 64
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Comb.ts",
+									"line": 25,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 89,
+							"name": "then",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 90,
+									"name": "then",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Finishing method that contains the result.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 91,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked with the result"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 92,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 93,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"id": 94,
+																	"name": "result",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Comb.ts",
+															"line": 76,
+															"character": 30
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Comb.ts",
+									"line": 76,
+									"character": 19
+								}
+							]
+						},
+						{
+							"id": 83,
+							"name": "thenExcept",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 84,
+									"name": "thenExcept",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Method this.except alias.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 85,
+											"name": "browsers",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The constraining browser array"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Browser"
+												}
+											}
+										},
+										{
+											"id": 86,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked when constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 87,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 88,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Comb.ts",
+															"line": 66,
+															"character": 51
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Comb",
+										"id": 64
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Comb.ts",
+									"line": 66,
+									"character": 19
+								}
+							]
+						},
+						{
+							"id": 71,
+							"name": "thenOnly",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 72,
+									"name": "thenOnly",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Method this.only alias.",
+										"returns": "This class instance for chaining\n"
+									},
+									"parameters": [
+										{
+											"id": 73,
+											"name": "browsers",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The constraining browser array"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Browser"
+												}
+											}
+										},
+										{
+											"id": 74,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked when constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 75,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 76,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Comb.ts",
+															"line": 40,
+															"character": 49
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Comb",
+										"id": 64
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Comb.ts",
+									"line": 40,
+									"character": 17
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								77,
+								65,
+								89,
+								83,
+								71
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "compatibility/Comb.ts",
+							"line": 5,
+							"character": 17
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						64
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "compatibility/Comb.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 95,
+			"name": "\"compatibility/VersionResolver\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/compatibility/VersionResolver.ts",
+			"children": [
+				{
+					"id": 96,
+					"name": "VersionResolver",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Singleton",
+							"type": {
+								"type": "reference",
+								"name": "Singleton"
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 97,
+							"name": "equal",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 98,
+									"name": "equal",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Checks if the version numbers are equal.",
+										"returns": "Whether the check passed\n"
+									},
+									"parameters": [
+										{
+											"id": 99,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "First version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 100,
+											"name": "comparison",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Second version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/VersionResolver.ts",
+									"line": 13,
+									"character": 14
+								}
+							]
+						},
+						{
+							"id": 101,
+							"name": "higher",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 102,
+									"name": "higher",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Checks if the version is higher than the provided comparison.",
+										"returns": "Whether the check passed\n"
+									},
+									"parameters": [
+										{
+											"id": 103,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "First version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 104,
+											"name": "comparison",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Second version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/VersionResolver.ts",
+									"line": 24,
+									"character": 15
+								}
+							]
+						},
+						{
+							"id": 105,
+							"name": "lower",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 106,
+									"name": "lower",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Checks if the version is lower than the provided comparison.",
+										"returns": "Whether the check passed\n"
+									},
+									"parameters": [
+										{
+											"id": 107,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "First version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 108,
+											"name": "comparison",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "Second version to compare"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/VersionResolver.ts",
+									"line": 35,
+									"character": 14
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								97,
+								101,
+								105
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "compatibility/VersionResolver.ts",
+							"line": 4,
+							"character": 28
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						96
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "compatibility/VersionResolver.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 118,
+			"name": "\"compatibility/Versioning\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/compatibility/Versioning.ts",
+			"children": [
+				{
+					"id": 119,
+					"name": "Versioning",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Binding",
+							"type": {
+								"type": "reference",
+								"name": "Binding"
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 120,
+							"name": "since",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 121,
+									"name": "since",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Perform this action since the provided version. Inclusive.",
+										"returns": "The callback return value if version matched",
+										"tags": [
+											{
+												"tag": "throws",
+												"text": "{VersionNotMatchedException}\n"
+											}
+										]
+									},
+									"parameters": [
+										{
+											"id": 122,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The version to check agains"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 123,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked if constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 124,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 125,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Versioning.ts",
+															"line": 28,
+															"character": 48
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Versioning.ts",
+									"line": 28,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 126,
+							"name": "until",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 127,
+									"name": "until",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Perform this action until the provided version. Inclusive.",
+										"returns": "The callback return value if version matched",
+										"tags": [
+											{
+												"tag": "throws",
+												"text": "{VersionNotMatchedException}\n"
+											}
+										]
+									},
+									"parameters": [
+										{
+											"id": 128,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The version to check agains"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 129,
+											"name": "callback",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "The callback to be invoked if constraints pass"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 130,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"signatures": [
+														{
+															"id": 131,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "any"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "compatibility/Versioning.ts",
+															"line": 44,
+															"character": 48
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Promise",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "compatibility/Versioning.ts",
+									"line": 44,
+									"character": 20
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								120,
+								126
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "compatibility/Versioning.ts",
+							"line": 6,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						119
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "compatibility/Versioning.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 109,
+			"name": "\"compatibility/exceptions\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/compatibility/exceptions.ts",
+			"children": [
+				{
+					"id": 110,
+					"name": "CompatibilityException",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 112,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 111,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 113,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								112,
+								111,
+								113
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "compatibility/exceptions.ts",
+							"line": 3,
+							"character": 35
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Exception"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "VersionNotMatchedException",
+							"id": 114
+						}
+					]
+				},
+				{
+					"id": 114,
+					"name": "VersionNotMatchedException",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 116,
+							"name": "message",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 964,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 115,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 963,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 117,
+							"name": "stack",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "/home/pavel/.npm/global/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 965,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "Error.stack"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Error.stack"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								116,
+								115,
+								117
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "compatibility/exceptions.ts",
+							"line": 7,
+							"character": 39
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "CompatibilityException",
+							"id": 110
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						110,
+						114
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "compatibility/exceptions.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 132,
+			"name": "\"compatibility/index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/compatibility/index.ts",
+			"sources": [
+				{
+					"fileName": "compatibility/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 133,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/pavel/Code/oss/exteranto/framework/lib/utils/src/index.ts",
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "External modules",
+			"kind": 1,
+			"children": [
+				1,
+				17,
+				40,
+				41,
+				52,
+				62,
+				63,
+				95,
+				118,
+				109,
+				132,
+				133
+			]
+		}
+	]
+}

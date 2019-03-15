@@ -1,6 +1,0 @@
-import { MyService } from './MyService'
-import { Container } from '@exteranto/ioc'
-
-const myService: MyService = Container.resolve(MyService)
-
-myService.execute()

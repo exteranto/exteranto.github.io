@@ -1,0 +1,69 @@
+<template>
+  <v-card class="mb-5">
+    <v-toolbar flat dark color="green">
+      <v-toolbar-title>
+        Interface&nbsp;<code v-html="type.toString()"></code>
+      </v-toolbar-title>
+    </v-toolbar>
+
+    <div v-if="type.githubUrl()">
+      <v-sheet class="pa-3">
+        <em class="body-1">
+          Defined in
+          <a
+            :href="type.githubUrl()"
+            target="_blank"
+          >{{ type.sourceFileName() }}</a>
+        </em>
+      </v-sheet>
+
+      <v-divider></v-divider>
+    </div>
+
+    <v-sheet
+      class="pa-3"
+      v-if="members.length || type.comment()"
+    >
+      <p class="body-2">{{ (type.comment().shortText || '').trim() }}</p>
+
+      <component
+        v-for="member in members"
+        :key="member.id"
+        :is="components[member.kind]"
+        :data="member"
+      ></component>
+    </v-sheet>
+  </v-card>
+</template>
+
+<script>
+import { Type } from '@/core/Type'
+import Method from '@/components/Method'
+import Constructor from '@/components/Constructor'
+
+export default {
+  props: {
+    data: Object
+  },
+
+  data: () => ({
+    components: {
+      512: Constructor,
+      2048: Method
+    }
+  }),
+
+  computed: {
+    type () {
+      return new Type(this.data, this.$route.params)
+    },
+
+    members () {
+      return [
+        ...this.type.constructors(),
+        ...this.type.methods()
+      ]
+    }
+  }
+}
+</script>
