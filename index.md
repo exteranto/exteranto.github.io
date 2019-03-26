@@ -1,6 +1,5 @@
 ---
-title: Exteranto
-description: The browser extension framework
+title: Home
 layout: default
 ---
 
