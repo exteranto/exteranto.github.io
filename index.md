@@ -1,4 +1,6 @@
 ---
+title: Exteranto
+description: The browser extension framework
 layout: default
 ---
 
