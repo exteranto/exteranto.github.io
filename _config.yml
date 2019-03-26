@@ -7,6 +7,5 @@ future: true
 jailed: false
 theme: jekyll-theme-minimal
 gfm_quirks: paragraph_end
-site:
-  title: Exteranto
-  description: The browser extension framework
+title: Exteranto
+description: The browser extension framework
