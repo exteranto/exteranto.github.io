@@ -112,8 +112,9 @@ import { Provider } from '@exteranto/core'
 
 export class AppProvider extends Provider {
   public boot () : void {
-    // The boot method usually binds dependencies to the container. Note that
-    // the container instance is automatically available on the provider class  .
+    // The boot method usually binds dependencies to
+    // the container. Note that the container instance
+    // is automatically available on the provider class.
     this.container.bind<MyService>(MyService).toSelf()
   }
 }
