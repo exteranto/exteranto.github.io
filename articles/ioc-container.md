@@ -173,7 +173,11 @@ Exteranto. There are two basic decorators.
   also accepts an array of arguments to supply to the dependency constructor.
 
 ```typescript
-import { AUtowired, Singleton, With } from '@exteranto/core'
+import {
+  With,
+  Autowired,
+  Singleton,
+} from '@exteranto/core'
 
 @Singleton
 class MyService {
