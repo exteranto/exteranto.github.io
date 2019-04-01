@@ -3,27 +3,26 @@ title: IOC Container
 layout: page
 ---
 
-## Handling the IOC Container
+## Handling the IOC Container <!-- omit in toc -->
 
 The IOC container is the heart of Exteranto. It provides an easy and convenient
 way to handle your services and their dependencies. When using TypeScript,
 Exteranto provides a set of TypeScript decorators that let you bind and resolve
 dependencies from the container on a single line while retaining flexibility.
 
-- [Handling the IOC Container](#handling-the-ioc-container)
-  - [Basic Example](#basic-example)
-  - [Binding Dependencies to the Container](#binding-dependencies-to-the-container)
-    - [Via the Container Class & Service Providers](#via-the-container-class--service-providers)
-    - [Via Class Decorators](#via-class-decorators)
-  - [Resolving Dependencies from the Container](#resolving-dependencies-from-the-container)
-    - [Via the Container Class](#via-the-container-class)
-    - [Via Property Decorators](#via-property-decorators)
-  - [Container Parameters](#container-parameters)
-  - [Advanced Functionality](#advanced-functionality)
-    - [Binding to a Superclass](#binding-to-a-superclass)
-    - [Browser-dependant & Tagged Services](#browser-dependant--tagged-services)
-    - [Resolving Optional Dependencies](#resolving-optional-dependencies)
-  - [Error Handling](#error-handling)
+- [Basic Example](#basic-example)
+- [Binding Dependencies to the Container](#binding-dependencies-to-the-container)
+  - [Via the Container Class & Service Providers](#via-the-container-class--service-providers)
+  - [Via Class Decorators](#via-class-decorators)
+- [Resolving Dependencies from the Container](#resolving-dependencies-from-the-container)
+  - [Via the Container Class](#via-the-container-class)
+  - [Via Property Decorators](#via-property-decorators)
+- [Container Parameters](#container-parameters)
+- [Advanced Functionality](#advanced-functionality)
+  - [Binding to a Superclass](#binding-to-a-superclass)
+  - [Browser-dependant & Tagged Services](#browser-dependant--tagged-services)
+  - [Resolving Optional Dependencies](#resolving-optional-dependencies)
+- [Error Handling](#error-handling)
 
 ### Basic Example
 
