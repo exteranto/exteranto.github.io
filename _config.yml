@@ -9,3 +9,5 @@ theme: jekyll-theme-minimal
 gfm_quirks: paragraph_end
 title: Exteranto
 description: The browser extension framework
+github:
+  repository_url: https://github.com/exteranto/framework
