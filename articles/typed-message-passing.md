@@ -3,34 +3,48 @@ title: Typed message passing
 layout: page
 ---
 
-## Typed message passing
+## Typed message passing <!-- omit in toc -->
 
 ### Prerequisites
 This article assumes you are familiar with a basic extension architecture.
 If you are just getting started with browser extensions, see
-[this overview](overview) by Chrome.
+[this overview][ext-overview] by Chrome.
 
-It is also beneficial to understand the [IoC container](Container) and
-[App booting](Booting). Especially if you experiment with the code samples.
+It is also beneficial to understand the [IOC Container][ioc-container] and
+[App booting][app-booting]. Especially if you experiment with the code samples.
+
+- [Prerequisites](#prerequisites)
+- [Events](#events)
+  - [Firing an event](#firing-an-event)
+  - [Handling an event](#handling-an-event)
+  - [Putting it together](#putting-it-together)
+- [Messaging](#messaging)
+  - [Communication channels](#communication-channels)
+  - [Messages](#messages)
+  - [Background script to content script](#background-script-to-content-script)
+  - [Content script to background script](#content-script-to-background-script)
+- [Middleware](#middleware)
+- [Routing](#routing)
+- [Known drawbacks](#known-drawbacks)
 
 ### Events
-Events are messages fired only within context of a single script. If you fire
-an event in tab A's content, other scripts will have no knowledge of it. Events
-are baked into Exteranto. They are
-- a bridge between native browser events and your app. For example
-[chrome.runtime.onInstalled](onInstalled) event is in Exteranto fired as
-[`ExtensionInstalledEvent`](ExtensionInstalledEvent) and
-[`ExtensionUpdatedEvent`](ExtensionUpdatedEvent);
+Events are messages fired only within the context of a single script. If you
+fire an event in tab A's content, other scripts will have no knowledge of it.
+Events are baked into Exteranto. They are
+- a bridge between native browser events and your app. For example the
+[chrome.runtime.onInstalled][ext-onInstalled] event is in Exteranto fired as
+[`ExtensionInstalledEvent`][ExtensionInstalledEvent] and
+[`ExtensionUpdatedEvent`][ExtensionUpdatedEvent];
 
 - a convenient way to inform about changes in application. For example events
-[`WindowLoadedEvent`](WindowLoadedEvent) and [`AppBootedEvent`](AppBootedEvent);
+[`WindowLoadedEvent`][WindowLoadedEvent] and [`AppBootedEvent`][AppBootedEvent];
 
-- really useful if you have to handle interaction between multiple independent
+- useful if you have to handle interaction between multiple independent
 parts of your app.
 
 #### Firing an event
-Creating new event is very simple. Anything class can be an event in exteranto
-as long as it extends [`Event`](Event) class.
+Creating a new event is very simple. Any class can be an event in exteranto as
+long as it extends [`Event`][Event] class.
 
 The `SampleEvent.ts` file:
 ```typescript
@@ -140,19 +154,20 @@ app.bootstrap()
 
 ### Messaging
 There are two actor types. Background, _server-like_ master script, and content.
-There is always one background and arbitrary number of contents.
+There is always one background and an arbitrary number of contents.
 
-Background can send a message to any content and each content can only send
-messages to the background. This is not different to usual extension architecture.
+Background can send a message to any content, and each content can only send
+messages to the background. This is not different from the usual extension
+architecture.
 
 #### Communication channels
 Before we can start sending messages around, we have to boot the channels.
-Messaging directly depends on [`MessagingProvider`](MessagingProvider). Sending
-messages from background to content depends on [`TabsProvider`](TabsProvider).
+Messaging directly depends on [`MessagingProvider`][MessagingProvider]. Sending
+messages from background to content depends on [`TabsProvider`][TabsProvider].
 
 #### Messages
-All messages have to extend [`Message`](Message) class, which is a child of
-[`Event`](Event). A message has to have `public payload: T` constructor
+All messages have to extend [`Message`][Message] class, which is a child of
+[`Event`][Event]. A message has to have `public payload: T` constructor
 parameter which is not cyclic neither contains a cyclic object. This `payload`
 property goes through `JSON.stringify` and is sent to the receiving script.
 There the message is instantiated again with the `JSON.parse`d payload which is
@@ -263,15 +278,17 @@ in `events.ts`-like file as we did in the previous section.
 - [Issue #125](https://github.com/exteranto/framework/issues/125)
 
 <!-- References -->
-[overview]: https://developer.chrome.com/extensions/overview
-[onInstalled]: https://developer.chrome.com/apps/runtime#event-onInstalled
+[ext-overview]: https://developer.chrome.com/extensions/overview
+[ext-onInstalled]: https://developer.chrome.com/apps/runtime#event-onInstalled
+
 [ExtensionInstalledEvent]: TODO
 [ExtensionUpdatedEvent]: TODO
 [WindowLoadedEvent]: TODO
 [AppBootedEvent]: TODO
-[Container]: TODO
-[Booting]: TODO
 [MessagingProvider]: TODO
 [TabsProvider]: TODO
 [Event]: TODO
 [Message]: TODO
+
+[app-booting]: TODO
+[ioc-container]: /articles/ioc-container

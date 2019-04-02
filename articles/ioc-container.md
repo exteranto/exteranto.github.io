@@ -7,7 +7,7 @@ layout: page
 
 The IOC container is the heart of Exteranto. It provides an easy and convenient
 way to handle your services and their dependencies. When using TypeScript,
-Exteranto provides a set of TypeScript decorators that let you bind and resolve
+Exteranto delivers a set of TypeScript decorators that let you bind and resolve
 dependencies from the container on a single line while retaining flexibility.
 
 - [Basic Example](#basic-example)
@@ -65,8 +65,8 @@ dependency constructor and returns a `Dependency<T>` instance. Further
 configuration can be attached to the dependency using the `Dependency<T>`
 interface.
 
-<!-- TODO: Add link to docs. -->
-> See the whole `Dependency<T>` API reference in Exterantor [API Reference]().
+> See the whole [`Dependency<T>`][Dependency] interface in Exteranto
+> [API Reference][api-reference].
 
 ```typescript
 import { MyService } from './MyService'
@@ -99,11 +99,11 @@ export class Provider {
 The standard way to define dependencies (this is especially useful when
 building a separate package) is to use a **service provider**. Service providers
 are classes that are specified in the application configuration. Exteranto
-executes these classes on application boot and provides basic services like the
-container instance to the provider methods.
+executes these classes on application boot and provides essential services like
+the container instance to the provider methods.
 
-<!-- TODO: Links to articles -->
-> Read more on [Service Providers]() and [Applcation Configuration]().
+> Read more on [Service Providers][service-providers] and
+> [Application Configuration][app-configuration].
 
 ```typescript
 import { MyService } from './MyService'
@@ -122,13 +122,13 @@ export class AppProvider extends Provider {
 #### Via Class Decorators
 
 Exteranto provides a set of class decorators that make binding dependencies to
-the container a piece of cake. There are two annotations and the only difference
-is the scope that the dependency is bound in. Either `@Singleton` to bind
-a service in a singleton scope or `@Binding`.
+the container a piece of cake. There are two annotations, and the only
+difference is the scope that the dependency is bound in. Either `@Singleton` to
+bind a service in a singleton scope or `@Binding`.
 
 > Note that, however, these decorators are convenient to use, it is discouraged
 > to use them in standalone packages to prevent container pollution. Packages
-> _should_ define their funcionalities in service providers.
+> _should_ define their functionalities in service providers.
 
 ```typescript
 import { Singleton } from '@exteranto/core'
@@ -148,8 +148,9 @@ resolve a dependency from the container. It takes in the service constructor and
 returns an instance.
 
 > Note that while this approach is perfectly okay, property decorators should be
-> your go-to option for resolving dependencies. Not only do they provide a neat
-> syntax, they also support good practices and object-oriented code structure.
+> your go-to option for resolving dependencies. Not only do they provide a clean
+> syntax, but they also support good practices and object-oriented code
+> structure.
 
 ```typescript
 import { MyService } from './MyService'
@@ -206,11 +207,10 @@ Exteranto also allows you to bind parameters to the container. This is achieved
 either via the application configuration file (which is also the prefered way)
 or via the `Container`'s `bindParam` method.
 
-These parameters can the be resolved using the `Container.resolveParam<T>`
+These parameters can then be resolved using the `Container.resolveParam<T>`
 method or the `@Param<T>` property decorator.
 
-<!-- TODO: Links to articles -->
-> Read more on [Applcation Configuration]().
+> Read more on [Application Configuration][app-configuration].
 
 ```typescript
 import { Container } from '@exteranto/core'
@@ -245,8 +245,14 @@ class MyService {
 ### Error Handling
 
 If the desired dependency is not present in the container, the `resolve` method
-throws a `DependencyNotFoundException`. Similarly, the `resolveParam` methods
+throws a `DependencyNotFoundException`. Similarly, the `resolveParam` method
 throws a `ParameterNotFoundException`. If you do not desire to throw an error
-when resolving a non-existant dependency, consider reading up on
+when resolving a non-existent dependency, consider reading up on
 [Resolving Optional Dependencies](#resolving-optional-dependencies).
 
+<!-- References -->
+[Dependency]: TODO
+
+[app-configuration]: TODO
+[service-providers]: TODO
+[api-reference]: TODO

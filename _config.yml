@@ -11,3 +11,4 @@ title: Exteranto
 description: The browser extension framework
 github:
   repository_url: https://github.com/exteranto/framework
+  is_project_page: true
