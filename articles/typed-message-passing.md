@@ -36,14 +36,14 @@ Events are baked into Exteranto. They are
 [`ExtensionInstalledEvent`][ExtensionInstalledEvent] and
 [`ExtensionUpdatedEvent`][ExtensionUpdatedEvent];
 
-- a convenient way to inform about changes in application. For example events
+- a convenient way to inform about changes in the application. For example events
 [`WindowLoadedEvent`][WindowLoadedEvent] and [`AppBootedEvent`][AppBootedEvent];
 
 - useful if you have to handle interaction between multiple independent
 parts of your app.
 
 #### Firing an event
-Creating a new event is very simple. Any class can be an event in exteranto as
+Creating a new event is simple. Any class can be an event in exteranto as
 long as it extends [`Event`][Event] class.
 
 The `SampleEvent.ts` file:
@@ -62,7 +62,7 @@ export class SampleEvent extends Event {
 }
 ```
 
-We have to trigger the `SampleEvent` somewhere. Let's create another listener
+We have to trigger the `SampleEvent` somewhere. Let's create a listener
 that listens to `AppBootedEvent` and then fires `SampleEvent` every second.
 The `FiresSampleEventAfterBoot.ts` file:
 ```typescript
@@ -92,7 +92,7 @@ export class FiresSampleEventAfterBoot implements Listener {
 ```
 
 #### Handling an event
-Now we have to create a listener that handles the event.
+Now we have to create another listener that handles the event.
 The `PrintsContent.ts` file:
 ```typescript
 import { Listener } from '@exteranto/core'
@@ -112,7 +112,7 @@ export class PrintsContent implements Listener {
 }
 ```
 
-Let's route the event to its listener.
+Let's route the events to their listeners.
 The `events.ts` file:
 ```typescript
 import { SampleEvent } from './SampleEvent'
@@ -157,7 +157,7 @@ There are two actor types. Background, _server-like_ master script, and content.
 There is always one background and an arbitrary number of contents.
 
 Background can send a message to any content, and each content can only send
-messages to the background. This is not different from the usual extension
+messages to the background. This is not different to the usual extension
 architecture.
 
 #### Communication channels
@@ -165,13 +165,41 @@ Before we can start sending messages around, we have to boot the channels.
 Messaging directly depends on [`MessagingProvider`][MessagingProvider]. Sending
 messages from background to content depends on [`TabsProvider`][TabsProvider].
 
+Create a new listener `BootsMessaging.ts`.
+
+```typescript
+import { Messaging } from '@exteranto/api'
+import { Autowired, Listener } from '@exteranto/core'
+
+export class BootsMessageListener implements Listener {
+
+  /**
+   * The messaging API implementation.
+   */
+  @Autowired
+  private messaging: Messaging
+
+  /**
+   * Handle the fired event.
+   */
+  public handle () : void {
+    this.messaging.listen()
+  }
+
+}
+
+```
+
+And let it listen to [`AppBootedEvent`][AppBootedEvent] in each script that
+should have messaging active. This will usually be both background and contents.
+
 #### Messages
 All messages have to extend [`Message`][Message] class, which is a child of
 [`Event`][Event]. A message has to have `public payload: T` constructor
-parameter which is not cyclic neither contains a cyclic object. This `payload`
-property goes through `JSON.stringify` and is sent to the receiving script.
-There the message is instantiated again with the `JSON.parse`d payload which is
-passed into the constructor.
+parameter which is not cyclic. This `payload` property goes through
+`JSON.stringify` and is sent to the receiving script. There the message is
+instantiated again with the `JSON.parse`d payload which is passed into the
+constructor.
 
 The whole process looks like this:
 
@@ -179,17 +207,20 @@ The whole process looks like this:
 2. We `send(new SampleMessage({ text: 'hello' }))`
 3. Payload `{ text: 'hello' }` is stringified to `"{"text":"hello"}"` and sent
 to the receiving script
-4. Receiving script `JSON.parse`s the payload which results in `{ text: 'hello '}`
-5. Receiving script instantiates `new SampleMessage('hello')` and it is routed to
-appropriate listener
+4. Receiving script `JSON.parse`s the payload which results in `{ text: 'hello' }`
+5. Receiving script instantiates `new SampleMessage({ text: 'hello' })` and it
+is routed to the appropriate listeners.
 
 The `SampleMessage.ts` file has to be somewhere in between background and content
-files as it's a common language:
+files as it's a common language between the two:
 ```typescript
 import { Message } from `@exteranto/api`
 
 export interface SampleMessagePayload {
 
+  /**
+   * Text field!
+   */
   text: string
 
 }
@@ -232,12 +263,16 @@ export class PrintsContent {
 }
 ```
 
-And now we can send the message from **content** in similar manner we have sent
+And now we can send the message from **content** in a similar manner we have sent
 the events in previous section:
 ```typescript
 import { SampleMessage } from '...'
 import { Messaging } from '@exteranto/api'
-import { Autowired, Listener, WindowLoadedEvent } from '@exteranto/core'
+import {
+  Autowired,
+  Listener,
+  WindowLoadedEvent,
+} from '@exteranto/core'
 
 export class FiresSampleMessagesOnWindowLoad {
 
@@ -267,8 +302,40 @@ We boot the app in both content and background script and route the messages
 in `events.ts`-like file as we did in the previous section.
 
 #### Background script to content script
+In order to send a message to a certain content script, the **tab id** has to be
+known. Then we use the [`Tabs`][Tabs] APIs provided by `@exteranto/api`.
+
+```typescript
+import { SampleMessage } from '...'
+import { Tabs } from '@exteranto/api'
+
+const tabs: Tabs = ...
+const tabId: number = 1
+const message: SampleMessage = new SampleMessage({
+  text: 'Hello',
+})
+
+tabs.get(tabId).then(tab => tab.send(message))
+```
 
 #### Content script to background script
+Since there is only one background script, no additional context information is
+needed to send a message (unlike the tab id in background -> content
+communication).
+
+```typescript
+import { SampleMessage } from '...'
+import { Messaging } from '@exteranto/api'
+
+const messaging: Messaging = ...
+const message: SampleMessage = new SampleMessage({
+  text: 'Hello',
+})
+
+messaging.send(message)
+```
+
+#### Replying to messages
 
 ### Middleware
 
@@ -289,6 +356,7 @@ in `events.ts`-like file as we did in the previous section.
 [TabsProvider]: TODO
 [Event]: TODO
 [Message]: TODO
+[Tabs]: TODO
 
 [app-booting]: TODO
 [ioc-container]: /articles/ioc-container
