@@ -233,14 +233,106 @@ class MyService {
 
 ### Advanced Functionality
 
+Although the basic funcionality is often sufficient, some edge cases require the
+container to be more flexible. That's why the container has various advanced
+features like binding to a superclass, service tagging, and resolving
+dependencies as an `Optional<T>`.
+
 #### Binding to a Superclass
+
+Exteranto's IOC Container allows you to bind dependencies to a superclass. This
+allows to switch implementations in the application if the new implementation
+extends the same superclass. Consider the following example:
 
 > Note that you cannot bind a dependency to an interface in TypeScript as
 > all interfaces are removed at compilation.
 
+```typescript
+import { Container } from '@exteranto/core'
+
+abstract class Storage {
+  abstract get<T> (key: string) : T
+  abstract set<T> (key: string, value: T) : void
+}
+
+class LocalStorage extends Storage {
+  get<T> (key: string) : T {
+    // Implemetation...
+  }
+
+  set<T> (key: string, value: T) : void {
+    // Implemetation...
+  }
+}
+
+// Now we can bind the concrete implementation
+// to the abstract superclass.
+Container.bind<Storage>(LocalStorage).to(Storage)
+
+console.assert(
+  Container.resolve<Storage>(Storage) instanceof Storage
+)
+```
+
+> Note that subsequent bindings to the same superclass override the previous
+> binding. If you want to be able to swap implementations dynamically, consider
+> tagging the bindings.
+
 #### Browser-dependant & Tagged Services
 
+As previously noted, binding a new implementations to the same superclass
+overrides the previously bound implementation. To avoid this behaviour, one has
+to differentiate the implementations by either tagging each one of them or by
+binding them to a specific browser. In the following example, we have a service
+that behaves differently in each browser. Exteranto automatically resolves the
+current instance based on the environment.
+
+```typescript
+import { Container, Browser } from '@exteranto/core'
+// Three different implementations of the
+// `Service` superclass.
+import {
+  Service,
+  ChromeService,
+  SafariService,
+  FirefoxSerivice,
+} from '...'
+
+// Now we can bind the implementations to the
+// abstract superclass based on the browser
+// environment.
+Container.bind<Service>(ChromeService)
+  .to(Service).for(Browser.CHROME)
+
+Container.bind<Service>(SafariService)
+  .to(Service).for(Browser.SAFARI)
+
+Container.bind<Service>(FirefoxSerivice)
+  .to(Service).for(Browser.EXTENSIONS)
+```
+
 #### Resolving Optional Dependencies
+
+Exteranto provides a convenient way of resolving dependencies that might not be
+present in the container via the `resolveOptional` container method. This method
+always resolves and instance of `Optional<T>`. If the binding is present, the
+optional is `Some<T>`, otherwise it is `None<T>`. No exceptions are thrown in
+the process.
+
+```typescript
+import { Service } from '...'
+import { Container, Optional } from '@exteranto/core'
+
+const service: Optional<Service> = Container
+  .resolveOptional<Service>(Service)
+
+console.assert(
+  typeof service.isSome() === 'boolean'
+)
+```
+
+> Read more on the `Optional<T>` interface in the Exteranto
+> [API Reference][api-reference].
 
 ### Error Handling
 
