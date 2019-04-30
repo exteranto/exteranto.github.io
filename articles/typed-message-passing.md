@@ -23,6 +23,7 @@ It is also beneficial to understand the [IOC Container][ioc-container] and
   - [Messages](#messages)
   - [Background script to content script](#background-script-to-content-script)
   - [Content script to background script](#content-script-to-background-script)
+  - [Replying to messages](#replying-to-messages)
 - [Middleware](#middleware)
 - [Routing](#routing)
 - [Known drawbacks](#known-drawbacks)
