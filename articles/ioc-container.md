@@ -346,5 +346,5 @@ when resolving a non-existent dependency, consider reading up on
 [Dependency]: TODO
 
 [app-configuration]: /articles/application-configuration
-[service-providers]: TODO
+[service-providers]: /articles/service-providers
 [api-reference]: TODO
