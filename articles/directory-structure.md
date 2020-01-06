@@ -58,13 +58,14 @@ boots the framework, registers listeners and loads application config.
 
 - **`events.ts`** is the application "router" and event listener registrar in
 one. The file is used to register listeners to various events&mdash;both
-cross-script and withtin a script (bakground/content). Read more about how
+cross-script and within a script (bakground/content). Read more about how
 events and messages work in the [Typed Message Passing][typed-message-passing]
 article.
 
 - **`/listeners`** is a default folder to store script-specific listeners. A
 simple listener is created and registered by Exteranto for demonstration. More
-about listeners in the previously mentioned article.
+about listeners in the previously mentioned
+[Typed Message Passing][typed-message-passing] article.
 
 #### `/assets`
 
