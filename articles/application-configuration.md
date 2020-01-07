@@ -7,11 +7,13 @@ layout: page
 
 Exteranto skeleton ships with a default configuration file which is located at
 `config/index.ts`. This article goes line by line through this file and
-describes the purpose of each section.
+describes the purpose of each section. It also tacklets on environment variables
+and how to handle them.
 
 - [Overview](#overview)
 - [Providers](#providers)
 - [Bound](#bound)
+- [Environment](#environment)
 
 ### Overview
 
@@ -76,6 +78,35 @@ export class MyService {
   }
 }
 ```
+
+### Environment
+
+Exteranto provides example environment files in its skeleton application named
+`.env.dev` and `.env.prod`, both in the root directory. All variables in this
+file **have to** be prepended with `"ETX_"`, otherwise the parser will skip
+them. The data is then available via Exteranto's custom global variable `$env`.
+Consider the following example.
+
+> Note: it is recommended to only access the `$env` object in your config files
+> and provide the data via `@Param`.
+
+`.env.prod`
+```
+EXT_NAME="Awesome Extension"
+```
+
+`config/index.ts`
+```typescript
+export default {
+  // ...
+  bound: {
+    app: { name: $env.NAME }
+  }
+}
+```
+
+To build the extension for different environments refer to the Exteranto CLI
+command via `ext build --help`.
 
 <!-- References -->
 [Dependency]: TODO
