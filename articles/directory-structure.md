@@ -38,7 +38,7 @@ APIs.
 
 #### `/test`
 
-The `test` directory contains a unit test scaffold based on [`mocha`][mocha].
+The `test` directory contains a test scaffold based on [`mocha`][mocha].
 
 ---
 
@@ -53,11 +53,11 @@ two subfolders are `app/background` and `app/content`.
 Each of these directories includes 2 files and a folder by default.
 
 - **`main.ts`** is the entry point of the respective script. This file is
-provided by Exteranto and should bot be changed unless strictly necessary. It
+provided by Exteranto and should not be changed unless strictly necessary. It
 boots the framework, registers listeners and loads application config.
 
-- **`events.ts`** is the application "router" and event listener registrar in
-one. The file is used to register listeners to various events&mdash;both
+- **`events.ts`** is both the application "router" and event listener registrar
+in one. The file is used to register listeners to various events&mdash;both
 cross-script and within a script (bakground/content). Read more about how
 events and messages work in the [Typed Message Passing][typed-message-passing]
 article.
@@ -74,7 +74,7 @@ Exteranto supports `.sass` styling by default.
 
 #### `/exceptions`
 
-The `exceptions` directory contains global definitions for exteption classes.
+The `exceptions` directory contains global definitions for exception classes.
 
 #### `/messages`
 
