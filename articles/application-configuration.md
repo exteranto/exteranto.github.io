@@ -7,7 +7,7 @@ layout: page
 
 Exteranto skeleton ships with a default configuration file which is located at
 `config/index.ts`. This article goes line by line through this file and
-describes the purpose of each section. It also tacklets on environment variables
+describes the purpose of each section. It also tackles on environment variables
 and how to handle them.
 
 - [Overview](#overview)
