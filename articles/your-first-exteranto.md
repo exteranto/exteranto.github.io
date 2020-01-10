@@ -1,7 +1,18 @@
 ---
-title: Application Configuration
+title: Your First Exteranto
 layout: page
 ---
+
+## Your First Exteranto <!-- omit in toc -->
+
+- [First Steps](#first-steps)
+- [Run Development Server](#run-development-server)
+- [Load the Unpacked Extension](#load-the-unpacked-extension)
+- [Outline](#outline)
+- [Create a Message](#create-a-message)
+- [Create a Background Script Listener](#create-a-background-script-listener)
+- [Create a Content Script Listener](#create-a-content-script-listener)
+- [Wrapping Up](#wrapping-up)
 
 ### First Steps
 
