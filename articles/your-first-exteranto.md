@@ -24,15 +24,14 @@ ext -v
 
 You should see a version number of `3.1.5` or greater.
 
-Create a new project as described above.
+Create a new project as described in [Installation][installation].
 
 ```bash
 ext create my-extension
 ```
 
-This will create a `my-extension` project in your current directory.
-
-Let's see what the `create` command has generated.
+The `create` command will generate a `my-extension` project in your current
+directory:
 
 ```
 my-extension/
@@ -52,28 +51,25 @@ my-extension/
   .env
   manifest.json
   package.json
+  ...
 ```
 
 Refer to the [Directory Structure][directory-structure] article for detailed
 description of generated contents.
 
-For the purpose of this tutorial we will restrict ourselves to working with the
-`app` and `messages` folders only.
+For the purpose of this tutorial we restrict ourselves to working within the
+`src/app` and `src/messages` folders mainly.
 
 
 ### Run Development Server
 
-To run the development sever run `watch` as defined in `package.json`
+Run the development sever with the `watch` command:
 
 ```bash
 npm run watch
 ```
 
-If you see an error warning of unresolved dependencies run
-
-```bash
-npm i
-```
+Warning of unresolved dependencies can be fixed with freash npm install.
 
 Once the script is active you should see the following output:
 
@@ -106,8 +102,8 @@ navigate to the `chrome://extensions` page where you can toggle developer mode,
 [Browser Extension Basics][browser-extension-basics] has further details.
 
 You will see an entry for 'Browser Extension 0.0.1' listed (the extension name
-is specified in `manifest.json`). Click the link to the 'background page` and
-a new console window will open diplaying the Exteranto welcome message.
+and version are specified in `manifest.json`). Click the link to the 'background
+page' and a console window will open diplaying the Exteranto welcome message.
 
 
 ### Outline
@@ -116,11 +112,9 @@ For this tutorial, we will create a very simple extension with no UI, just a
 background script that listens for a specific browser event and then dispatches
 a message to the content script, which will perform some action.
 
-1. We will define a message to be dispatched between backgound and content.
-
-1. We will define and register the background script listener.
-
-2. We will define and register the content script listener.
+1. Define a message to be dispatched between backgound and content
+2. Dfine and register the background script listener
+3. Define and register the content script listener
 
 The browser event that triggers our background script will be 'Browser Action'
 click, meaning that the toolbar icon associated to our installed extension has
@@ -151,7 +145,7 @@ following:
 The `Message` class itself extends `Event` and is defined in Exteranto core
 modules. We need not define any properties on the `PingContentScriptMessage`
 class, since the action of recieving it will be enough for our purposes here,
-but we could provide it a `payload` or a `respond` method.
+but we could provide it a `payload` or a `respond` callback.
 
 
 ### Create a Background Script Listener
@@ -159,7 +153,7 @@ but we could provide it a `payload` or a `respond` method.
 Now, in `src/background` open `events.ts`. You will see that a few events are
 already imported by default (`AppBootedEvent` and `Exception`). Below these,
 some 'listeners' are imported. You will see that two of these listeners are
-local to the `./listeners` folder.
+local to the `/listeners` folder.
 
 Below these imports, `events.ts` exports a sequence of listener -> event
 registrations using `touch()...addListener()`. For example, `ShowWelcomeMessage`
@@ -183,7 +177,7 @@ Now we can register a listener on this event:
 The editor should complain that no `PingContentScriptListener` can be found. We
 must create and then import it.
 
-In `listeners` create a new file `PingContentScriptListener.ts` and add the
+In `/listeners` create a new file `PingContentScriptListener.ts` and add the
 following:
 
 ```typescript
@@ -195,7 +189,7 @@ following:
 ```
 
 We implement the `Listener` interface, which defines a `handle` method expecting
-an optional `Event` argument. To stop the Edoitor complaining let's add a public
+an optional `Event` argument. To stop the Editor complaining let's add a public
 `handle` method:
 
 ```typescript
@@ -296,5 +290,6 @@ should read 'Message Received!'
 
 <!-- References -->
 
-[directory-structure]: /articles/directory-structure
 [browser-extension-basics]: /articles/browser-extension-basics
+[directory-structure]: /articles/directory-structure
+[installation]: /articles/installation
