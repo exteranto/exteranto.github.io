@@ -69,7 +69,7 @@ Run the development sever with the `watch` command:
 npm run watch
 ```
 
-Warning of unresolved dependencies can be fixed with freash npm install.
+Warning of unresolved dependencies can be fixed with a fresh npm install.
 
 Once the script is active you should see the following output:
 
@@ -87,14 +87,14 @@ Once the script is active you should see the following output:
 ### Load the Unpacked Extension
 
 Running `watch` will execute a project build, resulting in `dist` and `packs`
-folders being created in the top level of the directory.
+folders being created in the project root directory.
 
 `dist` contains the transpiled extension files `background.js` and `content.js`.
 
 `packs` contains uncompressed browser extension packages to be loaded in the
 browser locally. Loading from packs into the browser, we have the benefit of hot
 reloading during debugging and development, though the extension still needs to
-be manually refreashed from within the browser itself.
+be manually refreshed from within the browser itself.
 
 To install the extension locally for develpment and debugging open Chrome and
 navigate to the `chrome://extensions` page where you can toggle developer mode,
@@ -103,7 +103,7 @@ navigate to the `chrome://extensions` page where you can toggle developer mode,
 
 You will see an entry for 'Browser Extension 0.0.1' listed (the extension name
 and version are specified in `manifest.json`). Click the link to the 'background
-page' and a console window will open diplaying the Exteranto welcome message.
+page' and a console window will open displaying the Exteranto welcome message.
 
 
 ### Outline
@@ -112,8 +112,8 @@ For this tutorial, we will create a very simple extension with no UI, just a
 background script that listens for a specific browser event and then dispatches
 a message to the content script, which will perform some action.
 
-1. Define a message to be dispatched between backgound and content
-2. Dfine and register the background script listener
+1. Define a message to be dispatched between background and content
+2. Define and register the background script listener
 3. Define and register the content script listener
 
 The browser event that triggers our background script will be 'Browser Action'
@@ -144,8 +144,9 @@ following:
 
 The `Message` class itself extends `Event` and is defined in Exteranto core
 modules. We need not define any properties on the `PingContentScriptMessage`
-class, since the action of recieving it will be enough for our purposes here,
-but we could provide it a `payload` or a `respond` callback.
+class, since the action of receiving it will be enough for our purposes here,
+but we could provide additional data in the constructor that can be accessed by
+the message receiver.
 
 
 ### Create a Background Script Listener
@@ -156,8 +157,8 @@ some 'listeners' are imported. You will see that two of these listeners are
 local to the `/listeners` folder.
 
 Below these imports, `events.ts` exports a sequence of listener -> event
-registrations using `touch()...addListener()`. For example, `ShowWelcomeMessage`
-is registered to `AppBootedEvent`.
+registrations using `touch(...).addListener(...)`. For example,
+`ShowWelcomeMessage` is registered to `AppBootedEvent`.
 
 Let's import a new event, `BrowserActionClicked`, which we import not from
 `exteranto/core` but `exteranto/api`.
@@ -206,7 +207,8 @@ order to obtain a reference to the content script, which runs in the context of
 a browser tab, we must register our listener as dependent on the tabs service.
 Then we can import the message and send it from the handler. Exteranto provides
 the `@Autowired` annotation to easily resolve dependencies - here we can use it
-to resolve the listener's dependency on 'Tabs'.
+to resolve the listener's dependency on 'Tabs'. For more on extranto dependency
+management see [Handling the IOC Container][ioc-container]
 
 ```typescript
   import { Tabs } from '@exteranto/api'
@@ -285,11 +287,13 @@ handler expecting an instance of `PingContentScriptMessage` as an argument
 
 Now return to the browser - if everything has saved properly, you should be able
 to update the loaded extension by clicking the refresh icon. Now, in a new tab
-open on any url, open the console and click the browser action icon. A message
-should read 'Message Received!'
+open on any url other than `chrome://` or webstore (unless these have been
+specified beforehand in the `manifest.json` permissions), open the console and
+click the browser action icon. A message should read 'Message Received!'
 
 <!-- References -->
 
 [browser-extension-basics]: /articles/browser-extension-basics
 [directory-structure]: /articles/directory-structure
+[ioc-container]: /articles/ioc-container
 [installation]: /articles/installation
